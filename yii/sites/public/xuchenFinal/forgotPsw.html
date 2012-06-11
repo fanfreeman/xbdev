@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-profile</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/login.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+    <script>
+    	 $(document).ready(function() {
+			$("#loginMain").atomFly({ type : "fadeIn", isMask : false});	 
+		});
+    </script>
+</head>
+<body>
+
+<!--  S=loginMain  -->
+<article id="loginMain">
+	<header>Forgot password ?</header>
+    <section class="loginText userMail">
+    	<input type="text" placeholder="your email" />
+    </section>
+    <input type="button" class="sendrMail" value="" />
+</article>
+<!--  E=loginMain  -->
+</body>
+</html>

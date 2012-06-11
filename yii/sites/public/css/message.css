@@ -1,0 +1,345 @@
+@charset "utf-8";
+/**
+* Description:message style 
+* Developers:xuchen
+**/
+
+/*	messageMain
+-------------------------------------------------------------- */
+#messageMain {
+	width:100%;
+	margin-top:48px;
+}
+/*  messageUserList  */
+#messageUserList {
+	position:fixed; top:48px; left:0;
+	width:238px;
+	background:#f2f2f2;
+	border-right:1px solid #a6adb7;
+	box-shadow:1px 0px 1px #ccd0d6;
+}
+#messageUserList #messageSearchFrame {
+	width:238px; height:41px;
+ 	border-bottom:1px solid #dcd7d4;
+	box-shadow: 0 1px 1px #fcfcfc;
+}
+#messageUserList #messageSearchFrame .addMessage {
+	width:26px; height:26px;
+	margin:7px 0 0 10px;
+	background:url(../images/messageIconBg.png) no-repeat -4px 0 #e5e9eb;
+	background:url(../images/messageIconBg.png) no-repeat -4px 0, -webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#cdd2d7));
+	background:url(../images/messageIconBg.png) no-repeat -4px 0, -moz-linear-gradient(top, #fdfdfd, #cdd2d7);
+	border:1px solid #8f96a0;
+	box-shadow:0 0 2px #e8e9ea;
+	border-radius:26px;
+	cursor:pointer;
+}
+/*  message Search  */
+#messageUserList #messageSearchFrame .SearchBox {
+	width:178px; height:26px;
+	margin:7px 0 0 8px;
+	background:#fff;
+	border:1px solid #a9b0b7;
+	box-shadow:1px 1px 1px #cbd1d7 inset, -1px 1px 1px #dadde1;
+	border-radius:13px;
+}
+#messageUserList #messageSearchFrame .SearchBox .SearchText {
+	width:133px; height:20px;
+	margin:3px 0 0 10px;
+	background:transparent;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+#messageUserList #messageSearchFrame .SearchBox .SearchBtn {
+	width:26px; height:26px;
+	margin-right:5px;
+	background:url(../images/messageIconBg.png) no-repeat -4px -26px;
+	border:none;
+}
+#messageUserList .userList {
+	width:100%;
+	overflow:auto;
+}
+#messageUserList .userList li {
+	position:relative;
+	width:100%;
+	margin-top:1px; padding:10px 0 7px;
+	border-top:1px solid #f2f2f2; border-bottom:1px solid #dcd7d4;
+	box-shadow: 0 1px 1px #fcfcfc;
+	cursor:pointer;
+}
+#messageUserList .userList li:hover,#messageUserList .userList li.selected {
+	background:#53aeef;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background:-moz-linear-gradient(top, #6fbff2, #369dec);
+	border-top:1px solid #1688de; border-bottom:1px solid #1688de;
+	box-shadow:inset 0 0 1px #6fbff2, 0 0 1px #caedee;
+}
+#messageUserList .userList li:hover aside h6 a,#messageUserList .userList li:hover aside p,#messageUserList .userList li.selected aside h6 ,#messageUserList .userList li.selected aside h6 a,#messageUserList .userList li.selected aside p {
+	color:#fff;
+}
+#messageUserList .userList li .userPhoto {
+	width:34px; height:34px;
+	margin-left:20px;
+	border-radius:3px;
+}
+#messageUserList .userList li aside {
+	margin-left:10px;
+	width:150px;
+}
+#messageUserList .userList li aside h6 {
+	width:150px;
+	font:700 14px/18px Arial, Helvetica, sans-serif; color:#656565;
+}
+#messageUserList .userList li aside h6 a {
+	color:#656565;
+}
+#messageUserList .userList li aside p {
+	width:150px;
+	word-wrap:break-word;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#999;
+}
+#messageUserList .userList li span {
+	display:none; position:absolute;
+}
+#messageUserList .userList li.online span.ball {
+	display:block; position:absolute; left:5px; top:22px;
+	width:10px; height:11px;
+	background:url(../images/messageIconBg.png) no-repeat -30px 0;
+}
+/*  informationRecorded	 */
+#informationRecorded {
+	position:fixed; left:239px; top:48px;
+}
+/*  senderPeopleBlock	 */
+#informationRecorded .senderFrame {
+	width:100%;
+	padding:6px 0 5px;
+	border-bottom:1px solid #b8becb;
+}
+#informationRecorded .senderFrame .sendToTitle {
+	width:35px; height:30px;
+	text-align:center; text-shadow:  0px 1px 0 #FFF;
+	font:400 14px/30px Arial, Helvetica, sans-serif; color:#707386;
+}
+#informationRecorded .senderFrame .senderShow {
+}
+#informationRecorded .senderFrame .senderShow li {
+	float:left; margin:3px 5px 0 0; display:inline;
+}
+#informationRecorded .senderFrame .senderShow li.name,#informationRecorded .senderFrame .senderShow li.nameShow {
+	height:24px;
+	padding:0 10px;
+	background:#e5e9eb;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#cdd2d7));
+	background:-moz-linear-gradient(top, #fdfdfd, #cdd2d7);
+	border:1px solid #8f96a0; border-radius:24px;
+	box-shadow:1px 1px 1px #eee inset, -1px 1px 1px #ccc;
+}
+#informationRecorded .senderFrame .senderShow li.nameShow {
+	background:#e0f0c9;
+	border:1px solid #b3bfa2;
+	box-shadow:1px 1px 1px #eff8e2 inset, -1px 1px 2px #d4d9cc;
+}
+#informationRecorded .senderFrame .senderShow li.name p,#informationRecorded .senderFrame .senderShow li.nameShow p {
+	height:24px;
+	text-shadow: 0px 1px 0 #FFF;
+	font:700 12px/24px Arial, Helvetica, sans-serif; color:#797d86;
+}
+#informationRecorded .senderFrame .senderShow li.name p,#informationRecorded .senderFrame .senderShow li.nameShow p a{
+	color:#797d86;
+}
+#informationRecorded .senderFrame .senderShow li.name  a.deleteName,#informationRecorded .senderFrame .senderShow li.senderShow  a.deleteName {
+	width:11px; height:11px;
+	margin:6px 0 0 5px;
+	background:url(../images/messageIconBg.png) no-repeat -30px -11px;
+}
+#informationRecorded .senderFrame .senderShow li#peopleText {
+	position:relative; z-index:5;
+	width:300px;
+}
+#informationRecorded .senderFrame .senderShow li .addPeopleText {
+	width:300px; height:18px;
+	margin-top:5px;
+	background:transparent;
+	text-shadow:0px 1px 0 #FFF;
+	font:400 14px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+/*  completionUserList  */
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList {
+	position:absolute; top:25px; left:0; display:none;
+	width:290px;
+	overflow: hidden;
+	padding:5px;
+	background:#f2f2f2;;
+	border:1px solid #e1e1e1; border-top:none;
+}
+
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li {
+	width:100%; 
+	height:36px;
+	overflow: hidden;
+	padding:2px 0;
+	cursor:pointer;
+}
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li:hover,#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li.selected {
+	background:#53aeef;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background:-moz-linear-gradient(top, #6fbff2, #369dec);
+}
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li .userPhoto {
+	width:34px; height:34px;
+	margin:1px 0 0 3px;
+	background:url(../images/ImUserListPhotoBg.png) no-repeat;
+}
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList .userName {
+	height:36px;
+	width: 250px;
+	overflow: hidden;
+	text-indent:12px;
+	font:400 12px/36px Arial, Helvetica, sans-serif; color:#545454;
+}
+#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li:hover .userName,#informationRecorded .senderFrame .senderShow li#peopleText .completionUserList li.selected .userName {
+	color:#fff;
+}
+/*  Header Operation  */
+.senderFrame #messageOperation {
+	width:120px; height:30px;
+}
+.senderFrame #messageOperation input {
+	width:46px; height:30px;
+	margin-right:14px;
+	border:0;
+	cursor:pointer;
+}
+.senderFrame #messageOperation .deleteBtn {
+	display:none;
+	background:url(../images/messageBtnBg.png) no-repeat 0 0;
+}
+.senderFrame #messageOperation .addBtn {
+	background:url(../images/messageBtnBg.png) no-repeat 0 -30px;
+}
+/*  messList  */
+#informationRecorded .messageList {
+	padding:15px;
+	overflow:auto;
+}
+#informationRecorded .messageList li {
+	float:left;
+	width:100%;
+	padding:10px 0 20px;
+}
+#informationRecorded .messageList li .userPhoto {
+	width:34px; height:34px;
+	margin-top:3px;
+	border-radius:4px;
+}
+#informationRecorded .messageList li.others .userPhoto {
+	float:left; display:inline-block;
+}
+#informationRecorded .messageList li.me .userPhoto {
+	float:right; display:inline-block;
+}
+#informationRecorded .messageList li .message {
+	width:355px;
+}
+#informationRecorded .messageList li.others .message {
+	float:left; display:inline-block;
+}
+#informationRecorded .messageList li.me .message {
+	float:right; display:inline-block;
+	word-wrap:break-word;
+}
+#informationRecorded .messageList li .message p {
+	position:relative;
+	max-width:355px;
+	padding:10px;
+	word-wrap:break-word;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#666; word-wrap:break-word;
+	border-radius:5px;
+}
+#informationRecorded .messageList li .message p:before {
+	content:'';
+	position:absolute;
+	width:11px; height:11px;
+	-webkit-transform:rotate(-45deg) skew(10deg, 10deg); -moz-transform:rotate(-45deg) skew(10deg, 10deg); -o-transform:rotate(-45deg) skew(10deg, 10deg);	
+}
+#informationRecorded .messageList li .message span {
+	display:block; position:absolute; bottom:-25px; left:0;
+	width:200px;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#a1a9b1; word-wrap:break-word;
+}
+/*  他人聊天记录样式  */
+#informationRecorded .messageList li.others .message {
+	margin-left:15px;
+}
+#informationRecorded .messageList li.others .message p {
+	float:left;
+	background:#f6f8f9;
+	border:1px solid #b1b8c2;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 2px #d0d4d9;
+}
+#informationRecorded .messageList li.others .message p:before {
+	top:14px; left:-7px;
+	background:#f6f8fa;
+	border-top:1px solid #b1b8c2; border-left:1px solid #b1b8c2;
+}
+/*  自己聊天记录样式  */
+#informationRecorded .messageList li.me .message {
+	margin-right:15px;
+}
+#informationRecorded .messageList li.me .message p {
+	float:right;
+	background:#e0f0c9;
+	border:1px solid #b3bfa2;
+	box-shadow:1px 1px 1px #eff8e2 inset, -1px 1px 2px #d4d9cc;
+}
+#informationRecorded .messageList li.me .message p:before {
+	top:14px; right:-7px;
+	background:#e0f0c9;
+	border-right:1px solid #b1b8c2; border-bottom:1px solid #b1b8c2;
+}
+#informationRecorded .messageList li.me .message span {
+	text-align:right; left:auto; right:0;
+}
+/*  发送信息  */
+#sendMessageFrame {
+	position:relative;
+	width:100%;
+	padding:10px 0;
+	background:#dedfe4;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#dedfe4), to(#c2c7cd));
+	background:-moz-linear-gradient(top, #dedfe4, #c2c7cd);
+	border-top:1px solid #858c96;
+	box-shadow:0 -1px 3px #e8e9ea;
+}
+#sendMessageFrame .sendText {
+	height:14px;
+	margin:0 0 0 15px; padding:5px;
+	background:#fff;
+	font:400 12px/14px Arial, Helvetica, sans-serif;
+	border:1px solid #a9b0b7;
+	box-shadow:1px 1px 1px #cbd1d7 inset, -1px -1px 1px #dbdde1;
+	border-radius:5px;
+	overflow:auto;
+}
+#sendMessageFrame .sendBtn ,#sendMessageFrame .sendNewBtn{
+	position:absolute; bottom:12px; right:10px;
+	width:82px; height:32px;
+	background:url(../images/messageBtnBg.png) no-repeat 0 -60px;
+	border:0;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+[Mon Apr 23 17:55:50 2012] [error] [client 127.0.0.1] client denied by server configuration: /Library/WebServer/Documents/atombackup/yii/sites/public/protected/runtime/avatar_upload/e9/dd/c6743d83a43481f197043db0cd54e9dd54818.jpg, referer: http://freeman.atom.com/Profile/Index?uid=1
+[Wed May 16 22:11:30 2012] [error] [client 127.0.0.1] client denied by server configuration: /Library/WebServer/Documents/atombackup/yii/sites/public/class_files/.DS_Store

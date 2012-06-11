@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-File</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/file.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/atom.file.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+	<script type="text/javascript" src="js/file.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+	<ul class="nav fl">
+    	<li><a href="#" class="newsfeed" title="newsfeed"></a></li>
+        <li class="selected"><a href="#" title="file" class="file"></a></li>
+        <li><a href="#" class="message" title="message"></a></li>
+        <li><a href="#" class="directory" title="directory"></a></li>
+    </ul>
+    <section id="commonAccount" class="fr">
+        <div class="userName fr"><a href="#" title="freeman fan">freeman fan</a></div>
+        <img src="images/atomUser05.jpg" class="userPhoto fr" alt="xu chen">
+        <div class="settings"><a href="#" title="settings">settings</a></div>
+        <div class="signOut"><a href="#" title="sign out">sign out</a></div>
+    </section>
+</header>
+<!--  E=commonHeader  -->
+<!--  S=fileHead  -->
+<header id="fileHead">
+    <!--  S=fileSearchFrame  -->
+    <section id="fileSearchFrame" class="fl">
+    	
+        <div class="addFile fl"></div>
+        <div class="SearchBox fl">
+            <input type="text" class="SearchText fl" placeholder="Write File Name" />
+            <input type="button" class="SearchBtn fr" value="" />
+        </div>
+    </section><!--  E=fileSearchFrame  -->
+    <ul id="operationList" class="fl">
+    	<li class="share"><a href="#" title="share">share</a></li>
+        <li class="download"><a href="#" title="download">download</a></li>
+        <li class="rename"><a href="#" title="rename">rename</a></li>
+        <li class="delete"><a href="#" title="delete">delete</a></li>
+    </ul>
+    <section id="fileIcon" class="fr"><img src="../images/fileListIcon.png" /></section>
+</header>
+<!--  E=fileHead  -->
+<!--  S=fileUserList-->
+<article id="fileUserList" class="fl">
+	<ul id="userListOwn">
+    	<li class="own">
+            <span class="tips">552</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">All files</h6>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>  
+        <li class="own">
+            <span class="tips">502</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">My files</h6>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li id="friendsShared">Friends shared</li>
+    </ul>
+    <!--  S=UserList-->
+    <ul class="userList">
+        <!--  S=循环体  -->
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>    
+        <!--  E=循环体  -->    
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>           
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+        <li>
+            <span class="tips">2</span>
+            <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+            <aside class="fl">
+                <h6 class="Rows">Chen Pengfei</h6>
+                <p class="Rows">17 hours ago</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>
+    </ul><!--  E=UserList -->
+</article><!--  E=fileUserList -->
+<!--  S=fileMain -->
+<article id="fileMain">
+	<ul class="fileList">
+    	<li class="folder drop">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="file drop" drag="true" draggable="true" bind="off">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="zip drop" drag="true">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="folder drop">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="file drop" drag="true">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="zip drop" drag="true">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="folder drop">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="file drop" drag="true">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="zip drop" drag="true">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+    </ul>
+</article>
+<!--  E=file  -->
+<!--  S=hidden  -->
+<input type="hidden" id="hiddenDirectory" value="" />
+<input type="hidden" id="hiddenFile" value="" />
+<input type="hidden" id="hiddenPosition" value="" />
+<input type="hidden" id="hiddenPeople" value="" />
+<input type="hidden" id="hiddenShare" value="" />
+<!--  E=hidden  -->
+<!--  S=FileInfomation  -->
+<article id="fileInformation">
+	<span id="closeFileInformation"></span>
+    <div class="fl">
+    	<header>
+            <h3>wewadasd</h3>
+            <p>41412</p>
+        </header>
+        <section class="fileShow">
+            <div class="file"></div>
+        </section>
+        <section class="fileOperations">
+            <div class="deleteFile fr"></div>
+            <div class="downloadFile fr">
+             <a href="http://storage.atomdev.com/index.php?r=site/downloadFile&fid='+ fileID +'&callback=?" title="down ' + json.filename + ' - ' + formatSize(json.size) +'"></a>
+             <p>543543</p>
+            </div>
+            <div class="shareFile fl"></div>
+        </section>
+        <div class="ClearBoth"></div>
+        <section class="fileSareFrame">
+            <header>Share with 12 people:</header>
+            <ul class="sharePeopleList">
+                <li class="name"><img src="../images/atomUser01.jpg" alt="chen pengfei" /><a href="#" class="deleteName"></a></li>
+                <li class="addShare" id="addShare">
+                    <div class="addPeopleBlock">
+                        <ul class="addPeopleShow"><li class="textLi"><input type="text" class="addPeopleText" placeholder="Share with..." /></li></ul>
+                        <input type="hidden" class="hiddenPeople" value="" />
+                        <ul class="completionUserList">
+                            <li>
+                                <img src="../images/atomUser01.jpg" class="userPhoto fl" alt="chen pengfei" />
+                                <p class="userName fl">chen pengfei</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <section class="comments fr">
+    	<header>Comments</header>
+        <ul class="commentsList">
+        	<!--  S=循环体  -->
+            <li>
+                <span class="time">22 hours ago</span>
+                <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fl">
+                    <h6 class="Rows">Pengfei Chen </h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+          <!--  E=循环体  -->
+          <li>
+                <span class="time">22 hours ago</span>
+                <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fl">
+                    <h6 class="Rows">Pengfei Chen </h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+                <span class="time">22 hours ago</span>
+                <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fl">
+                    <h6 class="Rows">Pengfei Chen </h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+                <span class="time">22 hours ago</span>
+                <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fl">
+                    <h6 class="Rows">Pengfei Chen </h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+        </ul>
+        <div class="sendBox">
+            <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+            <input type="text" class="sendText fl" />
+            <input type="button" class="sendBtn fr" value="" />
+        </div>
+    </section>
+</article>
+<!--  E=FileInfomation  -->
+<!--  S=shareBox  -->
+<article id="shareBox">
+	<span id="closeShareBox"></span>
+	<header>Share folder</header>
+	<div class="addPeopleBlock fl pr">
+    	<ul class="addPeopleShow fl">
+        	<li class="textLi"><input type="text" class="addPeopleText" size="1" placeholder="Share with..." /></li>
+        </ul>
+        <input type="hidden" class="hiddenShare" value="" />
+        <input type="hidden" class="hiddenPeople" value="" />
+        <ul class="completionUserList"></ul>
+    </div>
+    <input type="button" class="addPeopleBtn shareFile fr" value=""/>
+</article>
+<!--  E=shareBox  -->
+<!--  S=uploadDocument  -->
+<article class="uploadDocument" id="fileTips">
+	<header>Upload Document</header>
+    <section id="uploadDocument">
+    	<iframe src="http://storage.atom.com/xuchenfinal/uploadfile.html" scrolling="no" id="upload" name="upload"></iframe>
+        <div class="ClearBoth"></div>
+        <div id="CloseuploadDocument">Complete</div>
+        <div class="ClearBoth"></div>
+    </section>
+</article>
+<!--  E=uploadDocument  -->
+<!--  S=common pop  -->
+<article class="commonPop popWindow" id="settingsPop">
+	<span class="closePopIcon"></span>
+	<header>Settings</header>
+    <section class="content">
+    	<h3>Password</h3>
+    	<dl>
+        	<dt class="fl">Current:</dt>
+            <dd class="fr"><input type="password" /></dd>
+        </dl>
+        <dl>
+        	<dt class="fl">New:</dt>
+            <dd class="fr"><input type="password" /></dd>
+        </dl>
+        <dl>
+        	<dt class="fl">Re-type:</dt>
+            <dd class="fr"><input type="password" /></dd>
+        </dl>
+    </section>
+    <ul class="commonPopBtn">
+    	<li class="cancel"></li>
+        <li class="done"></li>
+    </ul>
+</article>
+<!--  E=settings pop  -->
+<script type="text/javascript">
+//读取文件列表
+//get all files;
+//getFileList({ uid : "1", did : "", url : "http://storage.atom.com/"}, "allFiles", { box : $("#fileMain ul.fileList")} );
+//share directory
+//$("#shareBox .addPeopleBlock").atomSearchPeople({ type: "directoryShare", uid : "1", operationsUrl : "http://storage.atom.com/"});
+//share file
+//$("#fileInformation .fileOperations").children(".shareFile").click(function(){ $("#addShare").click(); });
+//$("#addShare").click(function(){ $("#addShare .addPeopleBlock").show(); $("#addShare .addPeopleBlock").find(".addPeopleText").focus();	});
+//$("#addShare .addPeopleBlock").atomSearchPeople({ type: "directoryShare", uid : "1", operationsUrl : "http://storage.atom.com/"});
+</script>
+</body>
+</html>

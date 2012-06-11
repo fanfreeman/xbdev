@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-File</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/im.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+	<script type="text/javascript" src="js/im.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+	
+<!--  S=IM  -->
+<!--  S=Fix IM UserList  -->
+<article id="imFix">Friends(52)</article>
+<article id="imUserList">
+	<header>
+    	<h6 class="fl">friends online(52)</h6>
+        <span class="fr">_</span>
+    </header>
+    <section class="userList">
+    	<ul>
+        	<li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+            <li>
+            	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                <p class="userName fl">Chen Pengfei</p>
+            </li>
+        </ul>
+    </section>
+    <section class="userSearch">
+    	<div>
+        	<input type="text" class="searchText fl" value="" placeholder="write name" />
+            <input type="button" class="searchBtn fr" value="" />
+        </div>
+    </section>
+</article>
+<!--  E=Fix IM UserList  -->
+<!--  S=Fix MessageWin  -->
+<div id="imTurnLeft"></div>
+<article id="imMessageBox">
+    <div id="imMessageList">
+    
+        <!--<section class="imMessageBlock fr">
+            <header>
+                <h6 class="fl Rows">1</h6>
+                <span class="fr closeIM">X</span>
+                <span class="fr scale off">□</span>
+            </header>
+            <div class="scaleBlock">
+                <ul class="operationsList">
+                    <li><img src="images/imOptionAdd.png" alt="Add People" /></li>
+                    <li><img src="images/imOptionMessage.png" alt="Show Messages" /></li>
+                    <li><img src="images/imOptionExit.png" alt="Exit" /></li>
+                </ul>
+                <div class="addPeopleBlock"><input type="text" class="addPeopleText" /></div>
+                <ul class="messageList">
+                    <li class="messages">
+                        <img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                        <aside class="fl">
+                            <h6>Chen Pengfei</h6>
+                            <p>messages,messages,messages,messages,messages</p>
+                        </aside>
+                    </li>
+                    <div class="clearBoth"></div>
+                    <li class="systemMessage systemJoin">somebody joined the conversation</li>
+                </ul>
+                <div class="messageSend">
+                    <textarea class="sendText"></textarea>
+                </div>
+            </div>
+        </section>-->
+        
+    </div>
+</article>
+<div id="imTurnRight"></div>
+<!--  E=Fix MessageWin  -->
+<!--  E=IM  -->
+
+<div class="ClearBoth"></div>
+
+<!--  E=FileInfomation  -->
+<script>
+IMPosition(true);
+$("#imUserList").children("section.userList").children("ul").children("li").click(function(){
+	//alert("js-ok");
+	var oThis = $(this);
+	var html = hWin ="";
+	var nID = oThis.index();
+	var oBlock,isShow;
+	if($("#imBlock" + nID).length ==0){
+		html = imBlock(nID);
+		$(html).appendTo("body");
+		$("#imBlock" + nID).hide();
+		hWin += "<section class=\"imMessageBlock fr\" alt=\"imBlock" + nID + "\">";
+		hWin += "<header>";
+		hWin += "<h6 class=\"off fl Rows\">" + nID + "</h6>";
+		hWin += "<span class=\"fr closeIM\">X</span>";
+		hWin += "</header>";
+		hWin += "</section>";
+		$(hWin).appendTo("#imMessageList");
+		var nWidth = 0;
+		for(var i = 0; i< $("#imMessageList").children().length; i++){
+			nWidth = nWidth + $("#imMessageList").children().outerWidth(true);
+		}
+		$("#imMessageList").width(nWidth);
+		IMShow();
+		IMBtn();
+	}
+	oBlock = $(".imMessageBlock[alt=imBlock" + nID +"]");
+	IMMove(oBlock);
+
+});
+$(".sendText").live("paste cut keydown keyup focus blur", function(e){
+	var oThis = $(this);
+	var keyCode = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
+	//alert("js-ok");
+	var height,style=this.style;
+	this.style.height = '26px';
+	if(keyCode !=13){  
+		if (this.scrollHeight > 26) {
+			if (156 && this.scrollHeight > 156) {
+				height = 156;
+				style.overflowY = 'scroll';
+			} else {
+				height = this.scrollHeight;
+				style.overflowY = 'hidden';
+			}
+			style.height = height  + 'px';
+		}	
+	} 
+});
+$("#imTurnLeft").click(function(){
+	if(!$("#imMessageList").is(":animated")){
+		$(".imMessageBlock[alt=win]:visible").find(".on").click();
+		$("#imMessageList").animate({right: "-=" + 267},function(){
+			IMShow();
+			IMBtn();
+		});
+	}
+});
+$("#imTurnRight").click(function(){
+	if(!$("#imMessageList").is(":animated")){
+		$(".imMessageBlock[alt=win]:visible").find(".on").click();
+		$("#imMessageList").animate({right: "+=" + 267},function(){
+			IMShow();
+			IMBtn();
+		});
+	}
+});
+function imBlock(n){
+	var html = "";
+	html += "<section id=\"imBlock" + n + "\" class=\"imMessageBlock\" alt=\"win\">";
+	html += "<header>";
+	html += "<h6 class=\"on fl Rows\">" + n + "</h6>";
+	html += "<span class=\"fr closeIM\">X</span>";
+	html += "</header>";
+	html += "<div class=\"scaleBlock\">";
+	html += "<ul class=\"operationsList\">";
+	html += "<li><img src=\"images/imOptionAdd.png\" alt=\"Add People\" /></li>";
+	html += "<li><img src=\"images/imOptionMessage.png\" alt=\"Show Messages\" /></li>";
+	html += "<li><img src=\"images/imOptionExit.png\" alt=\"Exit\" /></li>";
+	html += "</ul>";
+	html += "<div class=\"addPeopleBlock fl\">";
+	html += "<ul class=\"addPeopleShow fl\">";
+	html += "<li class=\"name\"><p class=\"fl\">12312</p><a href=\"#\" class=\"deleteName fr\" title=\"delete 12312\"></a></li>";
+	html += "<li class=\"name\"><p class=\"fl\">12312</p><a href=\"#\" class=\"deleteName fr\" title=\"delete 12312\"></a></li>";
+	html += "<li class=\"name\"><p class=\"fl\">12312</p><a href=\"#\" class=\"deleteName fr\" title=\"delete 12312\"></a></li>";
+	html += "<li class=\"name\"><p class=\"fl\">12312</p><a href=\"#\" class=\"deleteName fr\" title=\"delete 12312\"></a></li>";
+	html += "<li class=\"name\"><p class=\"fl\">12312</p><a href=\"#\" class=\"deleteName fr\" title=\"delete 12312\"></a></li>";
+	html += "<li><input type=\"text\" class=\"addPeopleText\" size=\"1\" /></li>";
+	html += "</ul>";
+	html += "<input type=\"button\" class=\"addPeopleBtn fr\" value=\"ADD\" />";
+	html += "</div>";
+	html += "<ul class=\"messageList\">";
+	html += "<li class=\"messages\">";
+	html += "<img src=\"images/peoplePic01.jpg\" class=\"userPhoto fl\" alt=\"\" />";
+	html += "<aside class=\"fl\">";
+	html += "<h6>Chen Pengfei</h6>";
+	html += "<p>messages,messages,messages,messages,messages</p>";
+	html += "</aside>";
+	html += "</li>";
+	html += "<div class=\"clearBoth\"></div>";
+	html += "<li class=\"systemMessage systemJoin\">somebody joined the conversation</li>";
+	html += "</ul>";
+	html += "<div class=\"messageSend\">";
+	html += "<textarea class=\"sendText\"></textarea>";
+	html += "</div>";
+	html += "</div>";
+	html += "</section>";
+	return html;
+}
+$(".off").live("click", function(){
+	var oThis = $(this);
+	var oBlock = oThis.parents(".imMessageBlock");
+	var oWin = $("#" + oBlock.attr("alt"));
+	$(".imMessageBlock[alt=win]:visible").not(oWin).find(".on").click();
+	oBlock.css("visibility", "hidden");
+	oWin.show().css({"position" : "fixed", "bottom" : "0", "left" : oBlock.offset().left -5});
+	oWin.children("div.scaleBlock").slideDown("fast");
+});
+$(".on").live("click", function(){
+	var oThis = $(this);
+	var oWin = oThis.parents(".imMessageBlock");
+	var oBlock = $(".imMessageBlock[alt=" + oWin.attr("id") +"]");
+	oWin.children("div.scaleBlock").slideUp("fast",function(){
+		oWin.hide();
+		oBlock.css("visibility", "visible");
+	});
+});
+$(".closeIM").live("click", function(){
+	//alert("js-ok");
+	var oThis = $(this);
+	var oB = oThis.siblings("h6");
+	var oBlock, oWin, n =0;
+	if(oB.hasClass("off")){
+		oBlock = $(this).parents(".imMessageBlock");
+		oWin = $("#" + oBlock.attr("alt")); 
+	}else{
+		oWin = $(this).parents(".imMessageBlock"); 
+		oBlock = $(".imMessageBlock[alt=" + oWin.attr("id") +"]");
+	}
+	n = oBlock.nextAll().length;
+	oBlock.remove();
+	oWin.hide();
+	//alert(n);
+	if( n> 0){
+		oWin.nextAll(":visible").animate({left: "+=" + 267});
+	}
+	oWin.remove();
+	IMShow();
+	IMBtn();
+	//
+});
+
+$("#imFix").click(function(){
+	//alert("js-ok");
+	//$(this).slideUp();
+	$(this).slideUp("fast", function(){$("#imUserList").slideDown();});
+});
+$("#imUserList header>span").click(function(){
+	$("#imUserList").slideUp("fast", function(){$("#imFix").slideDown();});
+});
+//选择user自动补全功能
+	$("dd.sendMessageBox").NameList({text : "input.messageName", listClass : "nameList"});
+</script>
+</body>
+</html>

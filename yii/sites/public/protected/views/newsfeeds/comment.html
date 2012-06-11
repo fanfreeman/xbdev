@@ -1,0 +1,14 @@
+<li item_id="{$comments.feedcomment_id}"> 
+    <a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+    <h2 class="fr"><a href="/index.php?r=Profile/Index&uid={$comments.user_id}">{getUserInfo($comments.user_id, 'firstname')}&nbsp;{getUserInfo($comments.user_id, 'lastname')}</a></h2>
+    <p class="fr">{$comments.content}</p>
+    <p class="fr time realtime">{$comments.created}</p>
+    <div class="ClearBoth"></div>
+</li>
+<script type="text/javascript" charset="utf-8">
+$('.realtime').html(function(){
+	realTime.lang = 'en';
+	$(this).removeClass('realtime');
+	return realTime.outPut($(this).html());
+});
+</script>

@@ -1,0 +1,37 @@
+<div class="feed_reply_bottom"><img src="images/NewsfeedReplyBottom.png" alt="" /></div>
+  <header> 
+    <div class="fr close">Close</div>
+    <div class="user fl">
+    	<img src="images/peopleIcon.png" width="30" height="30" alt="name" class="user_photo">
+      <a href="/index.php?r=Profile/Index&uid={$data.user_id}" class="user_name">{getUserInfo($data.user_id, 'firstname')}&nbsp;{getUserInfo($data.user_id, 'lastname')}</a> 
+    </div>
+  </header>
+	  <div id="feed_reply_scroll">
+      <div id="feed_content">
+            <div  class="feed_reply_con" id="detail_feeddetail" item_id="{$data.newsfeed_id}">{$data.params.content}</div>
+              <ul class="detail">
+                <li class="fl time realtime">{$data.created}</li>
+                <li class="fl {getCheckLiked($data.newsfeed_id, '3')} li_like_{$data.newsfeed_id} li_like_or_not" onclick="liked({$data.newsfeed_id})">{$data.intLikedNum}</li>
+                <li class="fl reply li_commentnum_{$data.newsfeed_id}">{$data.commontNum}</li>
+              </ul>
+            <form>
+                <textarea name="feedcomment_content" id = "feedcomment_content"></textarea>
+                <div class="clearfix mt10">
+                    <input type="button" value="Reply" class="btn" onclick="add_Comments('{$data.newsfeed_id}')">
+                </div>
+            </form>        
+        </div>      
+        <ul class="feed_reply_list" item_id="{$data.newsfeed_id}">
+        </ul>
+      </div>
+ <script type="text/javascript" charset="utf-8">
+$('.realtime').html(function(){
+	realTime.lang = 'en';
+	$(this).removeClass('realtime');
+	return realTime.outPut($(this).html());
+});
+//读取评论列表功能
+list_Comments($('#detail_feeddetail').attr("item_id"),'first_load');
+
+
+</script>

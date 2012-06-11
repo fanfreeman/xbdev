@@ -1,0 +1,51 @@
+<!--<form action="{$this->createUrl('', ['email'=>$email, 'code'=>$code])}" method="post" accept-charset="utf-8">
+
+<div class="registerMain">
+  <div class="InputNormarl">
+  	<label class="loginInfo" for="FirstName">FirstName</label>
+    <input type="text" id="FirstName" class="loginText" name="info[firstname]" />
+  </div>
+  <label class="LoginError"></label>
+	  
+  <div class="InputNormarl">
+  	<label class="loginInfo" for="LastName">LastName</label>
+    <input type="text" id="LastName" class="loginText" name="info[lastname]" />
+  </div>
+  <label class="LoginError"></label>
+	  
+  <div class="InputNormarl">
+  	<label class="loginInfo" for="Password">Password</label>
+    <input type="password" id="Password" class="loginText" name="info[password]" />
+  </div>
+  <label class="LoginError"></label>
+	  
+  <div class="InputNormarl">
+  	<label class="loginInfo" for="RePassword">Retype Password</label>
+    <input type="password" id="RePassword" class="loginText" name="repassword" />
+  </div>
+  <label class="LoginError"></label>
+	  
+  <input type="button" class="registerBtnLink" value="" id="rgRegister"/>
+</div>
+</form>-->
+
+<form action="{$this->createUrl('', ['email'=>$email, 'code'=>$code])}" method="post" accept-charset="utf-8">
+<!--  S=loginMain  -->
+    <article id="loginMain">
+        <header>Create a new account</header>
+        <section class="loginText userName">
+            <input type="text" placeholder="First name" name="info[firstname]"/>
+        </section>
+        <section class="loginText userName">
+            <input type="text" placeholder="Last name" name="info[lastname]"/>
+        </section>
+        <section class="loginText userPassword">
+            <input type="password" placeholder="Password" name="info[password]"/>
+        </section>
+        <section class="loginText userPassword">
+            <input type="password" placeholder="Re-type Password" name="repassword"/>
+        </section>
+        <input type="button" class="signUp" value="" id="rgRegister"/>
+    </article>
+</form>
+<!--  E=loginMain  -->

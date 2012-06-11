@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+Remove this if you use the .htaccess -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="author" content="xuchen" />
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Myspace-Message</title>
+<!--<base href="http://127.0.0.1:8020" />-->
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/message.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+<script type="text/javascript" src="js/atom.Message.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>-->
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<![endif]-->
+<!–[if lt IE 9]> 
+<script src="js/html5.js"></script> 
+<![endif]–>
+</head>
+<body data-role="page">
+
+<!--  S=commonHeader  -->
+<header class="commonHeader"  data-role="header">
+
+</header>
+<!--  E=commonHeader  -->
+<!--  S=messageMain  -->
+<div id="messageMain"  data-role="content">
+    <!--  S=messageUserList-->
+    <article id="messageUserList" class="fl">
+    	<!--  S=messageSearchFrame  -->
+        <section id="messageSearchFrame" class="fl">
+        	<div class="addMessage fl"></div>
+            <div class="SearchBox fl">
+            	<input type="text" class="SearchText fl" placeholder="Write People Name" />
+                <input type="button" class="SearchBtn fr" value="" />
+            </div>
+        </section><!--  E=messageSearchFrame  -->
+        <!--  S=UserList-->
+        <ul class="userList">
+        	<!--  S=添加新人聊天  -->
+        	<li id="newMessage" style="display:none;">
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6>New message to : "xu chen,chen pengfei, freeman, lei.han"</h6>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>    
+            <!--  E=添加新人聊天  -->  
+            <!--  S=循环体  -->
+        	<li class="online">
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic02.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei,freeman fan,lei.han,xu chen</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>    
+            <!--  E=循环体  -->     
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>
+            <li>
+            	<span class="ball"></span><span class="tips">2</span>
+                <a href="#" target="_blank" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="fl">
+                    <h6 class="Rows"><a href="#" target="_blank" title="Chen Pengfei">Chen Pengfei</a></h6>
+                    <p class="Rows">hdhshdsadhjshdsammhdhshdsadhjshdsammhdhshdsadhjshdsamm</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </li>    
+        </ul><!--  E=UserList -->
+    </article><!--  E=messageUserList -->
+    <!--  S=InformationRecorded -->
+    <article id="informationRecorded" class="fl">
+    	<section id="senderFrame" class="senderFrame fl">
+        	<div class="sendToTitle fl">To:</div>
+            <ul class="senderShow fl">
+            	<li class="nameShow">
+                	<p class="fl">chen pengfei</p>
+                </li>
+                <li class="name">
+                	<p class="fl">chen pengfei</p>
+                    <a href="#" class="deleteName fr" title="delete chen pengfri"></a>
+                </li>
+                <li id="peopleText">
+                	<input type="text" class="addPeopleText" placeholder="Write your firend name" />
+                    <ul class="completionUserList">
+                    	<li class="imQuickLi" name="chen pengfei" nameID="01">
+                        	<img src="images/peoplePic01.png" class="userPhoto fl" alt="chen pengfei" />
+                            <p class="userName fl">chen pengfei</p>
+                        </li>
+                        <li class="imQuickLi" name="freeman fan" nameID="02">
+                        	<img src="images/peoplePic01.png" class="userPhoto fl" alt="freeman fan" />
+                            <p class="userName fl">freeman fan</p>
+                        </li>
+                    </ul>
+                    <input type="hidden" class="hiddenPeople" value="" />
+                </li>
+            </ul>
+            <!--  S=messageOperation [delete] [addPeople] -->
+            <div id="messageOperation" class="fr">
+                <input type="button" class="deleteBtn fr" value="" />
+                <input type="button" class="addBtn fr" value="" />
+            </div><!--  E=messageOperation [delete] [addPeople]  -->
+        </section>
+    	<ul class="messageList">
+        	<li class="others">
+            	<a href="#" target="_blank" title="userName"><img src="images/peoplePic01.png" class="userPhoto fl" alt="" /></a>
+                <aside class="message fl">
+                	<p>So sorry! I haven't added a search function yet,So sorry! I haven't added a search function yet,So sorry! I haven't added a search function yet,<span class="datetime">18 Nov at 21:12</span></p>
+                </aside>
+            </li>
+            <li class="me">
+            	<a href="#" target="_blank" title="userName"><img src="images/peoplePic01.png" class="userPhoto fr" alt="" /></a>
+                <aside class="message fr">
+                	<p>So sorry! I haven yet,<span class="datetime">18 Nov at 21:12</span></p>
+                </aside>
+            </li>
+        </ul>
+        <section id="sendMessageFrame">
+        	<textarea class="sendText"></textarea>
+        	<input type="button" class="sendBtn" value="" />
+        </section>
+    </article><!--  E=InformationRecorded -->
+</div><!--  E=messageMain  -->
+</body>
+</html>

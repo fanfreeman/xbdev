@@ -1,0 +1,33 @@
+{foreach from=$followingfeeds.data item=followingfeed key=key name=title}
+<li item_id="{$followingfeed.newsfeed_id}" class="newsfeed_list_li" 
+{if $smarty.foreach.title.last && $load_type == "top_load"}
+	style="border-bottom:1px solid #b1b1b1"
+{/if}
+>
+    <a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+    <h2><a class="a_stopPropagation" href="/index.php?r=Profile/Index&uid={$followingfeed.user_id}">{getUserInfo($followingfeed.user_id, 'firstname')}&nbsp;{getUserInfo($followingfeed.user_id, 'lastname')}</a></h2>
+    <p>{$followingfeed.params.content}<a href="#"></a> </p>
+    <ul class="detail">
+        <li class="fl time realtime">{$followingfeed.created}</li>
+        <li class="fl {$followingfeed.checkLiked} li_like_{$followingfeed.newsfeed_id}" onclick="liked({$followingfeed.newsfeed_id})">{$followingfeed.intLikedNum}</li>
+        <li class="fl reply li_commentnum_{$followingfeed.newsfeed_id}">{$followingfeed.commontNum}</li>
+     </ul>
+    <span class="icon"></span>
+</li>
+{/foreach}
+<script type="text/javascript" charset="utf-8">
+$('.realtime').html(function(){
+	realTime.lang = 'en';
+	$(this).removeClass('realtime');
+	return realTime.outPut($(this).html());
+});
+//Newsfeed左侧列表悬停换色
+	$(".newsfeed_list li").hoverChangeCss({
+		ClassName : "current"
+	});
+//点击like不会触发上层刷新右侧newsfeed动作
+$('.liked,.notLiked,.a_stopPropagation').click(function(event){
+  event.stopPropagation();
+  // do something
+});  	
+</script>

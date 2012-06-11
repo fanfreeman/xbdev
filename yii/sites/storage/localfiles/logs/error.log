@@ -1,0 +1,1 @@
+[Wed Feb 29 12:32:08 2012] [error] [client 127.0.0.1] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 133432001 bytes) in Unknown on line 0, referer: http://storage.atom.com/xuchenFinal/uploadFile.php?&uid=1&did=1

@@ -1,0 +1,31 @@
+	<!--  S=notification  -->
+<article class="notification"> 
+    <header>
+    	<h3 class="fl">Notification</h3>
+        <span class="fr"><img src="images/Close.gif" id="CloseNotification" alt="Close" /></span>
+    </header>
+    <div class="content">
+      <ul class="notificationList">
+        {foreach $data as $notification}
+            {if $notification.is_read eq "0"}
+            <li class="current">
+            {else} 
+            <li>
+            {/if}        
+           <span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+            <h6>{$comment=getFeedcomment($notification.resource_id)}<a href="/index.php?r=Profile/Index&uid={$comment.user_id}">{getUserInfo($comment.user_id, 'firstname')}&nbsp;{getUserInfo($comment.user_id, 'lastname')}</a>&nbsp;{getNotificationType($notification.resource_type)}: {$comment.content}</h6>
+            <p class="realtime">{$notification.created}</p>
+        </li>
+        {/foreach}
+      </ul>
+<script type="text/javascript" charset="utf-8">
+   $("#CloseNotification").directionExit({ ShowBox:".notification", Direction:"bottom"});
+$('.realtime').html(function(){
+	realTime.lang = 'en';
+	$(this).removeClass('realtime');
+	return realTime.outPut($(this).html());
+});
+</script>      
+ </article>
+<!--  E=notification   -->    

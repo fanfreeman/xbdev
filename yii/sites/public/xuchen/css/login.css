@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/**
+ * Description:Login style
+ * Developers:xuchen
+ **/
+
+/*Login
+ -------------------------------------------------------------- */
+html { height:95%;}
+body {
+	height:100%;
+	background:url(../images/loginBodyBg.gif) repeat;
+	text-align:center;
+	
+}
+/*LoginBox
+ -------------------------------------------------------------- */
+
+.loginBox {
+	width:382px;
+	height:400px;
+	display:inline-block;
+	zoom:1; 
+	*display:inline;
+	vertical-align:middle;
+	margin:0 auto;
+	border-radius:0 0 5px 5px;
+	box-shadow:0px 0px 5px 0px #000;
+}
+.hiddenDiv {
+	height:100%;
+	overflow:hidden;
+	display:inline-block;
+	width:1px;
+	margin-left:-1px;
+	zoom:1; 
+	*display:inline; 
+	*margin-top:-1px;
+	_margin-top:0;
+	vertical-align:middle;
+}
+.loginBox header,.registerBox header {
+	width:382px;
+	height:102px;
+	background:url(../images/loginHeaderBg.png) no-repeat;
+	border-radius:5px 5px 0 0;
+}
+.loginMain {
+	width:322px;
+	height:258px;
+	padding:40px 30px 0;
+	background:#134f7d;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#134f7d), to(#0d324f));
+	background:-moz-linear-gradient(top, #134f7d, #0d324f);
+	border-radius:0 0 5px 5px;
+}
+.loginMain div,.registerMain div {
+	width:322px;
+	height:34px;
+	background:#f5fafd;
+	border-radius:5px;
+	position:relative;
+}
+.loginMain div.InputNormarl,.registerMain div.InputNormarl {
+	border:1px solid #3e607b;
+	box-shadow:inset 2px 2px 6px #919598;
+}
+.loginMain div.InputFocus,.registerMain div.InputFocus{
+	border:1px solid #3e607b;
+	box-shadow:inset 2px 2px 6px #919598, 0px 0px 4px #919598;
+}
+.loginMain div label.loginInfo,.registerMain div label.loginInfo {
+	width:322px;
+	height:34px;
+	text-indent:5px;
+	font:100 15px/34px Arial;
+	color:#ccc;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.loginMain div .loginText,.registerMain div .loginText {
+	width:312px;
+	height:20px;
+	background:transparent;
+	font:100 15px/20px Arial;
+	border:0;
+	position:absolute;
+	left:5px;
+	top:7px;
+}
+.loginMain label,.registerMain label {
+	width:322px;
+	height:26px;
+	text-align:left;
+	display:block;
+	font:100 15px/26px Arial;
+	color:#fff;
+}
+.loginMain label.LoginError,.registerMain label.LoginError {
+	color:red;
+}
+.loginMain label a {
+	color:#fff;
+}
+.loginMain label a:hover { 
+	color:#fff;
+	text-decoration:none;
+}
+.loginMain .rememberCheckbox {
+	float:left;
+	width:18px;
+	height:18px;
+	margin-top:35px;
+}
+.loginMain label.remember {
+	float:left;
+	width:130px;
+	height:18px;
+	padding-left:5px;
+	margin-top:30px;
+}
+.loginMain div.UICheckbox {
+	float:left;
+	width:18px;
+	height:18px;
+	padding:0;
+	cursor:pointer;
+	margin-top:34px;
+}
+.loginMain span.checkBoxShow {
+	width:18px;
+	height:18px;
+	background:url(../images/CheckboxBg.png) no-repeat top;
+	display:block;
+}
+.loginMain span.selected {
+	width:18px;
+	height:18px;
+	background:url(../images/CheckboxBg.png) no-repeat 0 -18px;
+	display:block;
+}
+.loginMain .loginBtn { 
+	float:right;
+	width:96px;
+	height:32px;
+	background:url(../images/LoginBtnBg.png) no-repeat left top;
+	border:0;
+	cursor:pointer;
+	margin-top:30px;
+}
+.loginMain .loginBtn:hover { 
+	background:url(../images/LoginBtnBg.png) no-repeat left -32px;
+}
+.loginMain .loginBtn:active { 
+	background:url(../images/LoginBtnBg.png) no-repeat left -64px;
+}
+/*RegisterBox
+ -------------------------------------------------------------- */
+
+.registerBox {
+	width:382px;
+	height:480px;
+	display:inline-block;
+	zoom:1; 
+	*display:inline;
+	vertical-align:middle;
+	margin:0 auto;
+	border-radius:0 0 5px 5px;
+	box-shadow:0px 0px 5px 0px #000;
+}
+.registerMain {
+	width:322px;
+	height:358px;
+	padding:20px 30px 0;
+	background:#134f7d;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#134f7d), to(#0d324f));
+	background:-moz-linear-gradient(top, #134f7d, #0d324f);
+	border-radius:0 0 5px 5px;
+}
+.registerBtnLink,.registerBtnHover,.registerBtnClick { 
+	float:right;
+	width:93px;
+	height:29px;
+	background:url(../images/SignUpBtn.png) no-repeat top;
+	border:0;
+	cursor:pointer;
+	margin-top:30px;
+}
+.registerBtnHover { 
+	 background-position:0 -29px;
+}
+.registerBtnClick { 
+	 background-position:0 -58px;;
+}

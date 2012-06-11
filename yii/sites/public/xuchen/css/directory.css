@@ -1,0 +1,67 @@
+@charset "utf-8";
+/**
+* Description:directory style 
+* Developers:xuchen
+**/
+
+body {
+	background:url(../images/newsFeedBodyBg.jpg) repeat fixed;
+}
+/*Directory
+-------------------------------------------------------------- */
+
+.directoryInfo { width:958px; height:38px; padding:7px 8px 0; background:#fff; box-shadow:4px -1px 2px #999; margin:53px auto 0;}
+.directoryInfo img { width:32px; height:32px; border-right:1px solid #bfbfbf;}
+.directoryInfo h1 { height:32px; padding:0; font:700 15px/32px Helvetica Neue; color:#999; margin:0; margin-left:20px; }
+.directoryInfo .categoryList {
+	height:32px;
+	padding-right:24px;
+	background:url(../images/Down.gif) no-repeat right;
+	font:700 15px/34px Helvetica Neue;
+	color:#979797;
+	position:relative;
+	cursor:pointer;
+}
+.directoryInfo .categoryList .category {
+	padding:0;
+	background:#fff;
+	border:1px solid #ccc;
+	border-top:none;
+	border-bottom:none;
+	position:absolute;
+	top:38px;
+	right:-9px;
+	display:none;
+}
+.directoryInfo .categoryList .category li {
+	width:100px;
+	height:25px;
+	padding-left:40px;
+	font:400 15px/25px Helvetica Neue;
+	border-bottom:1px solid #ccc;
+}
+.directoryInfo .categoryList .category li:hover {
+	background:#ccc;
+	color:#fff;
+}
+.directoryInfo .categoryHover {
+	background:url(../images/Down.gif) no-repeat right;
+}
+
+.directoryMain { width:908px; padding:12px 36px 15px; background:url(../images/DirectoryBg.png) repeat-y; margin:8px auto; position:relative;}
+.directoryMain .directoryBottom { width:980px; height:12px; position:absolute; bottom:-12px; left:0;}
+.directoryMain header { height:23px;}
+.directoryMain header h3 { height:23px; font:700 15px/23px Helvetica Neue; margin:0;}
+.directoryMain header .search { width:220px; height:21px; border:1px solid #a9a9a9; border-radius:4px; margin:0;}
+.directoryMain header .search .text { width:195px; height:16px; line-height:16px; border:none; margin:1px 0 0 2px;}
+.directoryMain header .search .btn { width:14px; height:14px; background: url(../images/DirectorySearchBg.png) no-repeat; border:0; margin:4px 5px 0 0;}
+
+.directoryList { width:908px; padding:0; margin:0;}
+.directoryList li { float:left; width:302px; height:80px; margin:18px 0; display:inline;}
+.directoryList li img { width:73px; height:72px; padding:4px 4px 7px; background:url(../images/DirectoryPicBg.png) no-repeat; margin:0;}
+.directoryList li h6 { width:200px; padding:0 10px; line-height:20px; white-space:nowrap; color:#333; margin:0;}
+.directoryList li h6 a { color:#333;}
+.directoryList li p { width:200px; height:16px; padding:3px 10px 0; line-height:16px; color:#989898; margin:0;}
+
+
+

@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+/**
+* Description: Common style 
+* Developers: xuchen
+**/
+
+.ClearBoth {
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+.Rows {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+body {
+	position: relative;
+	background: url(/images/bodyBg.png) repeat fixed;
+}
+
+/*Header
+-------------------------------------------------------------- */
+
+.commonHeader {
+	width: 100%;
+	height: 48px;
+	background: url(/images/commonBg.png) repeat-x 0 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.commonHeader .nav {
+	width: 280px;
+	height: 48px;
+	background: url(/images/CommonIcon.png) no-repeat -208px 0;
+}
+
+.commonHeader .nav li {
+	float: left;
+	width: 70px;
+	height: 48px;
+	background: url(/images/CommonIcon.png) no-repeat 138px -48px;
+}
+
+.commonHeader .nav li:hover,.commonHeader .nav li.selected {
+	background: url(/images/CommonIcon.png) no-repeat -140px 0;
+}
+
+.commonHeader .nav li a {
+	display: inline-block;
+	width: 32px;
+	height: 24px;
+	padding: 12px 19px;
+}
+
+.commonHeader .nav li a.newsfeed {
+	background: url(/images/CommonIcon.png) no-repeat -70px 0;
+}
+
+.commonHeader .nav li:hover  a.newsfeed,.commonHeader .nav li.selected a.newsfeed,.commonHeader .nav li a.newsfeed:hover {
+	background: url(/images/CommonIcon.png) no-repeat 0 0;
+}
+
+.commonHeader .nav li a.file {
+	background: url(/images/CommonIcon.png) no-repeat -70px -48px;
+}
+
+.commonHeader .nav li:hover  a.file,.commonHeader .nav li.selected a.file,.commonHeader .nav li a.file:hover {
+	background: url(/images/CommonIcon.png) no-repeat 0 -48px;
+}
+
+.commonHeader .nav li a.message {
+	background: url(/images/CommonIcon.png) no-repeat -70px -96px;
+}
+
+.commonHeader .nav li:hover  a.message,.commonHeader .nav li.selected a.message,.commonHeader .nav li a.message:hover {
+	background: url(/images/CommonIcon.png) no-repeat 0 -96px;
+}
+
+.commonHeader .nav li a.directory {
+	background: url(/images/CommonIcon.png) no-repeat -70px -144px;
+}
+
+.commonHeader .nav li:hover  a.directory,.commonHeader .nav li.selected a.directory,.commonHeader .nav li a.directory:hover {
+	background: url(/images/CommonIcon.png) no-repeat 0 -144px;
+}
+.commonHeader .nav li a.home {
+	background: url(/images/CommonIcon.png) no-repeat -70px -192px;
+}
+
+.commonHeader .nav li:hover  a.home,.commonHeader .nav li.selected a.home,.commonHeader .nav li a.home:hover {
+	background: url(/images/CommonIcon.png) no-repeat 0 -192px;
+}
+#commonAccount {
+	position: absolute;
+	right: 15px;
+	min-width: 115px;
+}
+
+#commonAccount:hover {
+	position: absolute;
+	right: 15px;
+	height: 165px;
+	background: #454d56;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 1px 2px 3px #404850 inset;
+}
+
+#commonAccount:hover .myProfile,#commonAccount:hover .settings,#commonAccount:hover .signOut {
+	display: block;
+}
+
+#commonAccount .myProfile {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 39px;
+	border-top: 1px solid #404850;
+	cursor: pointer;
+}
+
+#commonAccount .myProfile a {
+	display: block;
+	width: 100%;
+	height: 39px;
+	background: url(/images/CommonIcon.png) no-repeat -170px -209px;
+	text-indent: 50px;
+	font: 700 12px/38px Helvetica, Arial, sans-serif;
+	color: #d8d8d8;
+}
+
+#commonAccount .myProfile a:hover {
+	background: url(/images/CommonIcon.png) no-repeat -170px -249px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+#commonAccount .settings {
+	position: absolute;
+	top: 85px;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 39px;
+	border-top: 1px solid #404850;
+	cursor: pointer;
+}
+
+#commonAccount .settings a {
+	display: block;
+	width: 100%;
+	height: 39px;
+	background: url(/images/CommonIcon.png) no-repeat -170px -49px;
+	text-indent: 50px;
+	font: 700 12px/38px Helvetica, Arial, sans-serif;
+	color: #d8d8d8;
+}
+
+#commonAccount .settings a:hover {
+	background: url(/images/CommonIcon.png) no-repeat -170px -89px;
+	text-decoration: none;
+	color: #fff;
+}
+
+#commonAccount .signOut {
+	position: absolute;
+	top: 125px;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 39px;
+	border-top: 1px solid #404850;
+	cursor: pointer;
+}
+
+#commonAccount .signOut a {
+	display: block;
+	width: 100%;
+	height: 39px;
+	background: url(/images/CommonIcon.png) no-repeat -170px -129px;
+	text-indent: 50px;
+	font: 700 12px/38px Helvetica, Arial, sans-serif;
+	color: #d8d8d8;
+}
+
+#commonAccount .signOut a:hover {
+	background: url(/images/CommonIcon.png) no-repeat -170px -169px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.commonHeader .userPhoto {
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+.commonHeader .userName {
+	float: right;
+	margin-right: 10px;
+	display: inline-block;
+	color: #eef2f5;
+	text-shadow: 0 1px 0 #333;
+	letter-spacing: 1px;
+	font: 700 12px/50px Helvetica, Arial, sans-serif;
+}
+
+.commonHeader .userName a {
+	color: #d8d8d8;
+}
+.commonHeader .userName a:hover {
+	color: #fff;
+}
+
+.commonHeader .line {
+	width: 0;
+	height: 26px;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #cccccc;
+	overflow: hidden;
+}
+
+.commonHeader .returnHome {
+	width: 25px;
+	height: 25px;
+	background: url(/images/icon01.png) left top;
+	text-indent: -9999px;
+	margin: 0 11px 0 15px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.commonHeader .search {
+	width: 154px;
+	height: 18px;
+	margin: 3px 17px 0;
+	border-radius: 9px;
+	border: 1px solid #8e8e8e;
+	box-shadow: 1px 1px 0 0 #cdcdcd;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#9a9a9a), to(#b1b1b1));
+	background: -moz-linear-gradient(top, #9a9a9a, #b1b1b1);
+}
+
+.commonHeader .search .text {
+	width: 120px;
+	height: 18px;
+	padding-left: 10px;
+	border: none;
+	background: none;
+	font: 400 13px/18px Arial, Helvetica, sans-serif;
+	color: #e3e0e0
+}
+
+.commonHeader .search .btn {
+	width: 14px;
+	height: 14px;
+	margin: 2px 0 0 0;
+	border: none;
+	cursor: pointer;
+	background: url(/images/icon01.png) 0 -27px;
+}
+
+.commonHeader .msg {
+	width: 22px;
+	padding-right: 4px;
+	margin: 2px 0 0 16px;
+	height: 26px;
+	text-align: center;
+	color: #FFF;
+	font: 400 12px/14px Helvetica Neue;
+	background: url(/images/icon01.png) -81px 0;
+	text-shadow: 1px 1px #333;
+	position: relative;
+	cursor: pointer;
+}
+
+/*settings pop window
+-------------------------------------------------------------- */
+
+#settingsPop {
+	width: 380px;
+}
+
+#settingsPop .content {
+	width: 340px;
+	height: 160px;
+	padding: 10px 20px;
+}
+
+#settingsPop h3 {
+	width: 340px;
+	height: 20px;
+	padding-bottom: 10px;
+	text-align: left;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 14px/20px Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+#settingsPop .content dl {
+	width: 340px;
+	height: 32px;
+	margin: 7px auto;
+}
+
+#settingsPop .content dl dt {
+	width: 75px;
+	height: 30px;
+	text-align: right;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 12px/30px Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+#settingsPop .content dl dd {
+	width: 245px;
+	height: 20px;
+	padding: 5px;
+	background: #f6f8fa;
+	border: 1px solid #b1b8c2;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #e9ecef inset;
+}
+
+#settingsPop .content dl dd input {
+	width: 245px;
+	height: 20px;
+	background: transparent;
+	font: 400 14px/20px Arial, Helvetica, sans-serif;
+	color: #666;
+	border: none;
+}
+
+/*common pop window
+-------------------------------------------------------------- */
+
+.commonPop {
+	position: fixed;
+	display: none;
+	background: #f4f5f6;
+	border: 1px solid #959ba5;
+	border-radius: 10px;
+	box-shadow: 0px 1px 5px #999;
+}
+
+.commonPop span.closePopIcon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url(/images/fileIcon.png) no-repeat -163px -4px;
+	cursor: pointer;
+}
+
+.commonPop header {
+	height: 24px;
+	padding: 8px 20px;
+	margin-bottom: 1px;
+	text-align: left;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 16px/24px Arial, Helvetica, sans-serif;
+	color: #666;
+	border-bottom: 1px solid #e3e9ec;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0px 1px 1px #fafafb;
+}
+
+.commonPop .commonPopBtn {
+	height: 32px;
+	padding: 9px 20px;
+	margin-top: 1px;
+	border-top: 1px solid #e3e9ec;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0px 1px 1px #fafafb inset;
+}
+
+.commonPop .commonPopBtn li {
+	float: right;
+	display: inline-block;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.commonPop .commonPopBtn li.done {
+	width: 86px;
+	height: 31px;
+	background: url(/images/commonButton.png) no-repeat -50px 0;
+}
+
+.commonPop .commonPopBtn li.cancel {
+	width: 86px;
+	height: 31px;
+	background: url(/images/commonButton.png) no-repeat -50px -32px;
+}
+
+#UIMask {
+	background: #000;
+	opacity: 0.1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 99;
+}
+#atomLoading {
+	position: fixed; left: 0; top: 0; display: none;
+	width:60px; height:50px;
+	background:url(/images/Loader.gif) no-repeat center #292929;
+	border-radius:5px;
+}
+
+/*		mobile ui
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

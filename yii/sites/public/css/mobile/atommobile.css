@@ -1,0 +1,132 @@
+@charset "utf-8";
+/**
+* Description:login style 
+* Developers:xuchen
+**/
+
+/* login
+-------------------------------------------------------------- */
+.login { position:relative;}
+.login header {
+	width:97%; height:45px;
+	background:url(/images/loginIcon.png) repeat-x 0 43px;
+	text-align:center; text-shadow:1px 1px 1px #fff;
+	font:700 16px/45px Arial, Helvetica, sans-serif; color:#6e747f;
+}
+.login 	.betaIcon {
+	position:absolute; top:-0px; right:-3px;
+	width:61px; height:60px;
+	background:url(/images/LoginBeta.png) no-repeat;
+}
+.login .forget {
+	width:270px; height:20px;
+	margin-top:10px;
+	text-align:right; text-shadow:1px 1px 1px #fff;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#bfc2c5;
+}
+.login .forget a {
+	text-decoration:none;
+	color:#bfc2c5;
+}
+
+/* profile
+-------------------------------------------------------------- */
+
+.profileUserPic { position:absolute; left:10px; width:80px; height:80px; border-radius:5px; }
+.profileUserName { height:20px; margin-left:90px; font:700 14px/20px Arial, Helvetica, sans-serif;}
+.profileUserSignature { height:60px; margin-left:90px; font:400 12px/20px Arial, Helvetica, sans-serif; overflow:hidden;}
+
+/* message
+-------------------------------------------------------------- */
+
+/*  messList  */
+.messageList {
+	padding:10px 0;
+	overflow:auto;
+}
+.messageList li {
+	float:left;
+	width:100%;
+	padding:10px 0 20px;
+}
+.messageList li .userPhoto {
+	width:34px; height:34px;
+	margin-top:3px;
+	border-radius:4px;
+}
+.messageList li.others .userPhoto {
+	float:left; display:inline-block;
+}
+.messageList li.me .userPhoto {
+	float:right; display:inline-block;
+}
+.messageList li .message {
+	
+}
+.messageList li.others .message {
+	float:left; display:inline-block;
+}
+.messageList li.me .message {
+	float:right; display:inline-block;
+	word-wrap:break-word;
+}
+.messageList li .message p {
+	position:relative;
+	max-width:180px;
+	padding:10px;
+	word-wrap:break-word;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#666; word-wrap:break-word;
+	border-radius:5px;
+}
+.messageList li .message p:before {
+	content:'';
+	position:absolute;
+	width:11px; height:11px;
+	-webkit-transform:rotate(-45deg) skew(10deg, 10deg); -moz-transform:rotate(-45deg) skew(10deg, 10deg); -o-transform:rotate(-45deg) skew(10deg, 10deg);	
+}
+.messageList li .message span {
+	display:block; position:absolute; bottom:-25px; left:0;
+	width:200px;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#a1a9b1; word-wrap:break-word;
+}
+/*  他人聊天记录样式  */
+.messageList li.others .message {
+	margin-left:15px;
+}
+.messageList li.others .message p {
+	float:left;
+	background:#f6f8f9;
+	border:1px solid #b1b8c2;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 2px #d0d4d9;
+}
+.messageList li.others .message p:before {
+	top:14px; left:-7px;
+	background:#f6f8fa;
+	border-top:1px solid #b1b8c2; border-left:1px solid #b1b8c2;
+}
+/*  自己聊天记录样式  */
+.messageList li.me .message {
+	margin-right:15px;
+}
+.messageList li.me .message p {
+	float:right;
+	background:#e0f0c9;
+	border:1px solid #b3bfa2;
+	box-shadow:1px 1px 1px #eff8e2 inset, -1px 1px 2px #d4d9cc;
+}
+.messageList li.me .message p:before {
+	top:14px; right:-7px;
+	background:#e0f0c9;
+	border-right:1px solid #b1b8c2; border-bottom:1px solid #b1b8c2;
+}
+.messageList li.me .message span {
+	text-align:right; left:auto; right:0;
+}
+
+.messageText {margin-right:30px;}
+.messageSendBtn {position:absolute; right:10px;}
+
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-profile</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/profile.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+
+</header>
+<!--  E=commonHeader  -->
+<!--  S=profileHead  -->
+<header id="profileHead">
+    <section id="profileReturnDirectory" class="fl"><a href="#" title="return directory"></a></section>
+    <aside id="profileStatus" class="fr">online</aside>
+</header>
+<!--  E=profileHead  -->
+<!--  S=profileMain  -->
+<article id="profileMain">
+	<!--  S=profileInfoPic  -->
+	<section id="profileInfoPic" class="fl">
+        <img src="../images/peoplePic03.png" class="userPhoto" alt="Chen Pengfei" />
+<!--        <div class="sendMessage"></div>
+        <div class="follow"></div>-->
+    </section><!--  E=profileInfoPic  -->
+    <!--  S=profileInfo  -->
+    <section id="profileInfo" class="fl">
+    	<h1>Chen Pengfei freenam fan</h1>
+<!--        <aside class="userPosition editInfor">
+            <label for="fileName01" class="info">webwebwebwebwebwebwebwebwebwebwebwebwebwebwebwebwebwebwebweb<span class="edit"></span></label>
+            <input type="text" id="fileName01" class="text" alt="userPosition" />
+        </aside>-->
+        <ul id="skillsList">
+            <li>
+                <p>Photography</p>
+                <a href="#" class="deleteName" title="delete Photography"></a>
+            </li>
+            <li>
+                <p>fireworks</p>
+                <a href="#" class="deleteName" title="delete fireworks"></a>
+            </li>
+            <li id="skillsText">
+                <input type="text" class="addSkillsText" placeholder="Write your skills name" />
+                <ul class="completionUserList">
+                    <li class="imQuickLi" name="chen pengfei" nameID="01">
+                       skills name
+                    </li>
+                    <li class="imQuickLi" name="freeman fan" nameID="02">
+                        skills name
+                    </li>
+                </ul>
+                <input type="hidden" class="hiddenPeople" value="" />
+            </li>
+            <div class="ClearBoth"></div>
+        </ul>
+        <div class="ClearBoth"></div>
+        <aside class="signature editInfor">
+            <label for="fileName01" class="info">I'm helping people to use computers and the Internet  easier and better.<span class="edit"></span></label>
+            <input type="text" id="fileName01" class="text" alt="userSignature" />
+        </aside>
+        <ul class="btnList">
+            <li class="follow"></li>
+           <!-- <li class="sendMessage"></li>	-->
+        </ul>
+    </section><!--  E=profileInfo  -->
+    <div class="ClearBoth"></div>
+    <!--  S=profileContact  -->
+    <section id="profileContact">
+    	<dl>
+        	<dt class="userTel"></dt>
+            <dd class="editInfor">
+                <label for="fileName01" class="info">xxxxxxxxxxx<span class="edit"></span></label>
+                <input type="text" id="fileName01" class="text" alt="userMail" />
+            </dd>
+        </dl>
+        <dl>
+        	<dt class="userTel"></dt>
+            <dd class="editInfor">
+                <label for="fileName01" class="info">xxxxxxxxxxx<span class="edit"></span></label>
+                <input type="text" id="fileName01" class="text" alt="userTel" />
+            </dd>
+        </dl>
+        <dl>
+        	<dt class="userMail"></dt>
+            <dd class="editInfor">
+                <label for="fileName01" class="info">xxxxxxxx@myspace.cn<span class="edit"></span></label>
+                <input type="text" id="fileName01" class="text" alt="userTel" />
+            </dd>
+        </dl>
+    </section><!--  E=profileContact  -->
+    <div class="ClearBoth"></div>
+    <!--  S=Skills  -->
+    <section id="skillsTitle">Skills and Expertise</section>
+    <ul id="skillsList">
+    	<li>
+        	<p>Photography</p>
+            <a href="#" class="deleteName" title="delete Photography"></a>
+        </li>
+        <li>
+        	<p>fireworks</p>
+            <a href="#" class="deleteName" title="delete fireworks"></a>
+        </li>
+        <li id="skillsText">
+            <input type="text" class="addSkillsText" placeholder="Write your skills name" />
+            <ul class="completionUserList">
+                <li class="imQuickLi" name="chen pengfei" nameID="01">
+                   skills name
+                </li>
+                <li class="imQuickLi" name="freeman fan" nameID="02">
+                    skills name
+                </li>
+            </ul>
+            <input type="hidden" class="hiddenPeople" value="" />
+        </li>
+        <div class="ClearBoth"></div>
+    </ul>
+    <!--  E=Skills  -->
+  <!--  <div class="ClearBoth"></div>
+    <section id="activityTitle">Activity</section>-->
+    <!--<ul id="activityList">
+    	<li>
+        	<a href="#" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="Chen Pengfei" /></a>
+            <p class="fl"><strong>Shek Xiang</strong> has shared 17 files with you.  </p>
+            <p class="dateTime fl">35 minutes ago</p>
+        </li>
+        <div class="ClearBoth"></div>
+        <li>
+        	<a href="#" title="Chen Pengfei"><img src="images/peoplePic01.png" class="userPhoto fl" alt="Chen Pengfei" /></a>
+            <p class="fl"><strong>Shek Xiang</strong> has shared 17 files with you.  </p>
+            <p class="dateTime fl">35 minutes ago</p>
+        </li>
+        <div class="ClearBoth"></div>
+    </ul>-->
+    
+</article><!--  E=profileMain  -->
+</body>
+</html>

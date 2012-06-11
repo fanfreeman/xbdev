@@ -1,0 +1,362 @@
+@charset "utf-8";
+/**
+* Description:profile style 
+* Developers:xuchen
+**/
+
+/*profileHead
+-------------------------------------------------------------- */
+
+#profileHead {
+	position:fixed; left:0; top:48px; z-index:20;
+	width:100%; height:50px;
+	background:#d0d3d8;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#dcdde2), to(#c2c7cd));
+	background:-moz-linear-gradient(top, #dcdde2, #c2c7cd);
+	border-bottom:1px solid #858c96;
+	box-shadow:0 1px 1px #e5e6ea inset, 0 1px 1px #c9cdd0;
+}
+#profileHead #profileReturnDirectory {
+	width:55px; height:31px;
+	padding:10px 0 9px 5px;
+}
+#profileHead #profileReturnDirectory a {
+	display:block;
+	width:55px; height:31px;
+	background:url(../images/contactsIcon.png) 0 -60px;
+}
+
+#profileHead #profileStatus {
+	width:100px; height:48px;
+	padding:2px 20px 0 0;
+	text-align:right; text-shadow: 0px 1px 0 #FFF;
+	font:700 14px/48px Arial, Helvetica, sans-serif; color:#666;
+}
+/*profileMain
+-------------------------------------------------------------- */
+
+#profileMain {
+	margin-top:98px;
+	overflow:auto;
+}
+#profileMain #profileInfoPic {
+	width:120px; height:115px;
+	margin:0 25px; padding:25px 0 20px;
+}
+#profileMain #profileInfoPic .userPhoto {
+	width:100px; height:100px;
+	padding:5px; margin-left:3px;
+	background:#fff;
+	border:1px solid #b1b8c2; border-radius:5px;
+	box-shadow:0 0 4px #c2c7cd;
+}
+#profileMain #profileInfo {
+	height:115px;
+	padding:25px 0 20px;
+}
+#profileMain #profileInfo h1.userName {
+	float:left; display:inline-block;
+	position:relative;
+	height:34px;
+	text-shadow:0px 1px 1px #fff;
+	font:700 16px/34px Arial, Helvetica, sans-serif; color:#666;
+}
+#profileMain #profileInfo h1.userName label.info {
+	display:block;
+	height:34px;
+	text-shadow:0px 1px 1px #fff;
+	font:700 16px/34px Arial, Helvetica, sans-serif; color:#666;
+}
+#profileMain #profileInfo h1.userName input.text {
+	position:relative; left:0; top:0; display:none;	
+	width:100px; height:34px;
+	background:transparent;
+	text-shadow:0px 1px 1px #fff;
+	font:700 16px/34px Arial, Helvetica, sans-serif; color:#666;
+	border:none;
+}
+#profileInfo .positionList {
+	float:left; display:inline-block;
+	height:24px;
+	padding-top:4px; margin-left:60px;
+}
+#profileInfo .positionList li {
+	float:left; display:inline-block;
+	height:24px; margin-right:5px;
+	padding:0 10px;
+	background:#f6f8fa;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 1px #d0d4d9;
+	border:1px solid #b1b8c2; border-radius:4px;
+}
+#profileInfo .positionList li p {
+	float:left; display:inline-block;
+	height:24px;
+	margin-right:5px;
+	font:400 12px/24px Helvetica, Arial, sans-serif; color:#666;
+}
+#profileInfo .positionList li p a{
+	color:#666;
+	text-decoration:none;
+}
+#profileInfo .positionList li a.deleteName {
+	float:right; display:inline-block;
+	width:11px; height:11px;
+	margin:6px 0 0 5px;
+	background:url(../images/messageIconBg.png) no-repeat -30px -11px;
+}
+#profileInfo .positionList li#positionText {
+	position:relative; z-index:5; display:none;
+	width:180px;
+}
+#profileInfo .positionList li .addPositionText {
+	width:180px; height:18px;
+	margin-top:3px;
+	background:transparent;
+	text-shadow:1px 1px 1px #fff;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+#profileInfo .positionList li#skillsEdit {
+	width:40px; height:10px;
+	padding:0; margin:10px 0 0 0;
+	background:none;
+	border:none; border-radius:none;
+	box-shadow:none;
+	background:url(../images/contactsIcon.png) no-repeat -110px -60px;
+	cursor:pointer;
+}
+
+
+#profileMain #profileInfo aside.userPosition {
+	float:left; display:inline-block;
+	position:relative;
+	height:26px;
+	padding-top:8px; margin-left:60px;
+	text-shadow: 0px 1px 0 #FFF;
+}
+#profileMain #profileInfo aside.userPosition label.info {
+	display:block;
+	height:18px;
+	text-shadow: 0px 1px 0 #FFF;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#666;
+}
+#profileMain #profileInfo aside.userPosition input.text {
+	position:absolute; left:0; top:8px; display:none;	
+	height:18px;
+	background:transparent;
+	text-shadow: 0px 1px 0 #FFF;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#999;
+	border:none;
+}
+#profileMain #profileInfo aside.signature {
+	position:relative; float:left;
+	height:18px;
+	padding:8px 0 4px; margin:0;
+	text-shadow: 0px 1px 0 #FFF;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#999;
+}
+#profileMain #profileInfo aside.signature label.info {
+	display:block;
+	height:18px;
+	text-shadow: 0px 1px 0 #FFFe;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#999;
+}
+
+#profileMain #profileInfo aside.signature input.text {
+	position:absolute; left:0; top:8px; display:none;	
+	height:18px;
+	background:transparent;
+	text-shadow: 0px 1px 0 #FFF;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#999;
+	border:none;
+}
+#profileMain #profileInfo .btnList {
+	width:100%; height:30px;
+	margin:10px auto 0;
+}
+#profileMain #profileInfo .btnList li {
+	float:left; display:inline-block;
+	width:101px; height:30px;
+	margin-right:20px;
+	background:url(../images/contactsIcon.png) no-repeat;
+	cursor:pointer;
+}
+#profileMain #profileInfo .btnList li.sendMessage {
+	background-position:0 0;
+}
+#profileMain #profileInfo .btnList li.shareFile {
+	background-position:0 -30px;
+}
+#profileMain #profileInfo .btnList li.follow {
+	background-position:0 -91px;
+}
+#profileMain #profileInfo .btnList li.followed {
+	background-position:0 -121px;
+}
+#profileMain #profileInfo .btnList li.uploadPhoto {
+	background-position:0 -151px;
+}
+#profileMain #profileInfo aside.editInfor label.info span.edit,#profileMain #profileInfo h1.editInfor label.info span.edit {
+	position:absolute; right:-35px; top:13px; display:block;
+	width:30px; height:10px;
+	background:url(../images/contactsIcon.png) no-repeat -110px -60px;
+	cursor:pointer;
+}
+
+#profileMain #profileContact {
+	padding:15px 28px;
+	border-top:1px solid #b2b9bd;
+	box-shadow:0px 1px 1px #eceef0 inset;
+}
+#profileMain #profileContact dl {
+	width:100%; height:20px;
+	margin:5px auto;
+}
+#profileMain #profileContact dt {
+	float:left; display:inline-block;
+	width:25px; height:20px;
+}
+#profileMain #profileContact dd {
+	position:relative; float:left; display:inline-block;
+	height:20px;
+}
+#profileMain #profileContact dd label.info {
+	display:block;
+	height:18px;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#666;
+}
+
+#profileMain #profileContact dd input.text {
+	position:absolute; left:0; top:0; display:none;	
+	height:18px;
+	background:transparent;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#666;
+	border:none;
+}
+#profileMain #profileContact dd.editInfor label.info span.edit {
+	position:absolute; right:-35px; top:5px; display:block;
+	width:30px; height:10px;
+	background:url(../images/contactsIcon.png) no-repeat -110px -60px;
+	cursor:pointer;
+}
+#profileMain #profileContact dt.userTel {
+	background:url(../images/directoryIcon.png) no-repeat -122px -20px;
+}
+#profileMain #profileContact dt.userMail {
+	background:url(../images/directoryIcon.png) no-repeat -122px -40px;
+}
+#profileMain #activityTitle {
+	width:100%; height:40px;
+	text-indent:32px; text-shadow: 0px 1px 0 #FFF;
+	font:700 14px/40px Arial, Helvetica, sans-serif; color:#666;
+	border-top:1px dashed #b2b9bd;
+}
+#profileMain #activityList {
+	padding:0 32px 20px;
+}
+#profileMain #activityList li {
+	clear:both;
+	width:100%;
+	padding-top:10px;
+}
+#profileMain #activityList li .userPhoto {
+	width:24px; height:24px;
+	border-radius:2px;
+}
+#profileMain #activityList li p {
+	height:24px;
+	margin-left:5px;
+	 text-shadow: 0px 1px 0 #FFF;
+	font:400 14px/24px Arial, Helvetica, sans-serif; color:#666;
+}
+#profileMain #activityList li p.dateTime {
+	height:24px;
+	margin-left:20px;
+	font:400 14px/24px Arial, Helvetica, sans-serif; color:#999;
+}
+#profileMain #skillsTitle {
+	width:100%; height:40px;
+	background:url(../images/skillsIcon.png) no-repeat 32px 12px;
+	text-indent:52px; text-shadow:1px 1px 1px #eee;
+	font:700 14px/40px Arial, Helvetica, sans-serif; color:#666;
+	border-top:1px solid #b2b9bd;
+	box-shadow:0px 1px 1px #eceef0 inset;
+}
+#profileMain #skillsList {
+	padding:0 30px 10px;
+}
+#profileMain #skillsList li {
+	float:left; display:inline-block;
+	height:24px; margin:0 5px 5px 0;
+	padding:0 10px;
+	background:#f6f8fa;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 1px #d0d4d9;
+	border:1px solid #b1b8c2; border-radius:4px;
+}
+#profileMain #skillsList li p {
+	float:left; display:inline-block;
+	height:24px;
+	font:400 12px/24px Helvetica, Arial, sans-serif; color:#666;
+}
+#profileMain #skillsList li p a{
+	color:#666;
+	text-decoration:none;
+}
+#profileMain #skillsList li a.deleteName {
+	float:right; display:inline-block;
+	width:11px; height:11px;
+	margin:6px 0 0 10px;
+	background:url(../images/messageIconBg.png) no-repeat -30px -11px;
+}
+#profileMain #skillsList li#skillsEdit {
+	width:40px; height:10px;
+	padding:0; margin:10px 0 0 0;
+	background:none;
+	border:none; border-radius:none;
+	box-shadow:none;
+	background:url(../images/contactsIcon.png) no-repeat -110px -60px;
+	cursor:pointer;
+}
+#profileMain #skillsList li#skillsText {
+	position:relative; z-index:5; display:none;
+	width:150px;
+}
+#profileMain #skillsList li .addSkillsText {
+	width:150px; height:18px;
+	margin-top:3px;
+	background:transparent;
+	text-shadow:1px 1px 1px #fff;
+	font:400 14px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+/*  completionUserList  */
+#profileMain #skillsList li#skillsText .completionUserList {
+	position:absolute; top:25px; left:0; display:none;
+	width:290px;
+	padding:2px 0;
+}
+
+#profileMain #skillsList li#skillsText .completionUserList li {
+	width:100%; height:36px;
+	padding:2px 0; margin-bottom:1px;
+	text-indent:12px;
+	font:700 12px/36px Arial, Helvetica, sans-serif; color:#545454;
+	box-shadow:none;
+	cursor:pointer;
+}
+#profileMain #skillsList li#skillsText .completionUserList li:hover,#profileMain #skillsList li#skillsText .completionUserList li.selected {
+	background:#53aeef;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background:-moz-linear-gradient(top, #6fbff2, #369dec);
+	color:#fff;
+}
+.profileSendMessage {
+	padding:10px 20px;
+}
+.profileSendMessage textarea {
+	width:400px; height:60px;
+	padding:3px;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:1px solid #ccc; border-radius:5px;
+}
+

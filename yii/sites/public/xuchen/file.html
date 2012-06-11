@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-File</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/file.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+<!--    <script type="text/javascript" src="js/jquery.uploadify.v2.1.4.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>-->
+    <script type="text/javascript" src="js/jquery.filedrop.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+	<script type="text/javascript" src="js/jQuery.UI.js"></script>
+	<script type="text/javascript" src="js/UI.js"></script>
+<!--    <script type="text/javascript">
+		// <![CDATA[
+		$(document).ready(function() {
+		  $('#file_upload').uploadify({
+			'uploader'  : '/xuchen/images/uploadify.swf',
+			'script'    : '/xuchen/uploadify.php',
+			'cancelImg' : '/xuchen/images/cancel.png',
+			'folder'    : '/xuchen/uploads',
+			'queueID' : 'uploadDocument',
+			'width' : '170',
+			'height' : '278',
+			'sizeLimit'	: 107374182400,
+			'hideButton': true,
+			'wmode' : 'transparent',
+			'multi'	 : true,
+			'auto'      : true
+		  });
+		});
+		// ]]>
+		</script>-->
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+    <label class="userName">NewsFeedAccount</label>
+    <img src="images/peopleIcon.png" class="userPhoto" alt="Photo" />	
+    <!--  S=返回首页  -->
+    <a href="#" class="fl returnHome">Return Home</a>
+    <!--  E=返回首页  -->
+    <div class="fl line"></div>
+    <!--  S=搜索  -->
+    <div class="search fl">
+        <input type="text" class="text fl" value="" placeholder="Search">
+        <input type="button" class="btn fl">
+    </div>
+    <!--  E=搜索  -->
+    <div class="fl line"></div>
+    <label class="fl msg">98</label>
+</header>
+<!--  E=commonHeader  -->
+<div id="Alert" style="margin-top:55px;">Test</div>
+
+<!--  S=file  -->
+<article id="fileMain">
+	<ul class="fileList">
+    	<li class="fileUploadBox">
+   <!--     	<input id="file_upload" type="file" name="file_upload" />
+            <form enctype="multipart/form-data" action="http://storage.atom.com/index.php?r=site/index" method="POST">
+                <!-- MAX_FILE_SIZE must precede the file input field -->
+                <!-- Name of input element determines name in $_FILES array
+                Upload this file: <input name="uploaded_file" type="file" /><br />
+                <input name="curr_dir_id" type="hidden" />
+                <input type="submit" value="Upload File" />
+            </form>
+        	<div class="fileUploadFrame">
+            	<input type="file" class="fileUpload" />
+            </div>-->
+        </li>
+    	<li class="Folder">
+        	<section>
+                
+            </section>
+            <aside>
+            	<label for="fileName01" class="fileNameInfo">FileName01</label>
+                <input type="text" id="fileName01" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+    	<li class="Folder">
+        	<section>
+            </section>
+            <aside>
+            	<label for="fileName02" class="fileNameInfo">FileName02</label>
+                <input type="text" id="fileName02" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="dragBox">
+        	<section>
+                <div class="Option">
+                	<div class="easyMenu"></div>
+                    <ul>
+                        <li><a href="#">Download</a></li>
+                        <li>Share</li>
+                        <li>Comment</li>
+                        <li class="fileDelete">Delete</li>
+                    </ul>
+                </div>
+            </section>
+            <aside>
+            	<label for="fileName03" class="fileNameInfo">FileName03</label>
+                <input type="text" id="fileName03" class="fileNameText" />
+                <div class="fileDate">December 30, 2011 11:19 AM</div>
+            </aside>
+        </li>
+        <li class="dragBox">
+        	<section>
+                <div class="Option">
+                	<div class="easyMenu"></div>
+                </div>
+            </section>
+            <aside>
+            	<label for="fileName04" class="fileNameInfo">FileName04</label>
+                <input type="text" id="fileName04" class="fileNameText" />
+            </aside>
+        </li>
+    </ul>
+</article>
+<!--  E=file  -->
+<!--<div id="dropbox">
+    <span class="message">Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>
+</div>-->
+<!--<input id="file_upload" type="file" name="file_upload" />-->
+<div class="ClearBoth"></div>
+<!--  S=FileInfomation  -->
+<article class="uploadDocument">
+	<header>Upload Document</header>
+    <section id="uploadDocument">
+    	<div class="fileTypeIcon">
+        	<div class="fileCommon"></div>
+        </div>
+        <aside>
+        	<h6>File Name</h6>
+            <div class="uploadifyProgress blue stripes">
+            	<span class="uploadifyProgressBar"></span>
+            </div>
+            <p class="fileUploadInfo"></p>
+        </aside>
+        <div class="ClearBoth"></div>
+        <div id="CloseuploadDocument">Complete</div>
+        <div class="ClearBoth"></div>
+    </section>
+</article>
+<!--  E=FileInfomation  -->
+<script type="text/javascript">
+//alert('<?php echo Yii::app()->user->id; ?>');
+//读取文件列表
+getFile("1","1", "ul.fileList", true);
+
+function getProgress(id){
+	//alert(id);
+	$.ajax({
+		type : "get",
+		url: "http://storage.atom.com/index.php?r=site/GetProgress",
+		data: {"progress_key" : id},
+		dataType : "jsonp",
+		cache : true,
+		beforSend : function(XMLHttpRequest){
+		},
+		success : function (json){
+			//alert("js-ok");
+			
+			//alert(json);
+			//josn = eval(json);
+			//console.log(json);
+			var current = json.current;
+			var total = json.total;
+			//alert(total);
+			if (current != total){
+				$(".fileUploadInfo").text(current +" of " + total + "- Processing");
+				//$(".fileUploadInfo").text(current/total);
+				console.log(current/total);
+				$(".uploadifyProgressBar").css("width", current/total*300 +"px");
+				
+				setTimeout("getProgress(" + id + ")", 500);
+			}else{
+				//getFile("1", "ul.fileList", true);
+				$(".uploadifyProgressBar").css("width", "300px");
+				$(".fileUploadInfo").text(current +" of " + total + " -  Complete");
+			}
+			
+			//$("#Alert").text(json.current + json.total);
+			//alert(json);
+//			if (percent < 100){
+//				setTimeout("getProgress(" + id + ")", 100);
+//			}
+		},
+		complete: function (XMLHttpRequest, textStatus)
+		{
+			//HideLoading();
+			
+		},
+		error: function ()
+		{
+			alert("error");
+			//请求出错处理
+		}
+	});
+//	$.ajax({
+//		url: "http://storage.atom.com/index.php?r=site/GetProgress",
+//		data: {"progress_key" : id},
+//		success: function(percent, responseCode){
+//			$(".uploadifyProgressBar").width(percent+"%");
+//			//document.getElementById("progressinner").style.width = percent+"%";
+//			//console.log('progress: ' + percent);
+//            //if (percent < 100){
+//            //     setTimeout("getProgress()", 100);
+//            //}
+//		}
+//	});
+}
+
+function startProgress(){
+	if ($(".uploadDocument").is(":hidden")){
+		FlyInto($(".uploadDocument"));
+	}
+	//getProgress($(".fileUploadBox").attr("alt"));
+    //document.getElementById("progressouter").style.display="block";
+    setTimeout("getProgress($('.fileUploadBox').attr('alt'))", 500);
+}
+
+</script>
+</script>
+</body>
+</html>

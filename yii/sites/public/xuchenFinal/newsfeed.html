@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-Newsfeed</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/newsfeed.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+    <script type="text/javascript" src="js/newsfeed.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+	<ul class="nav fl">
+    	<li class="selected"><a href="#" class="newsfeed" title="newsfeed"></a></li>
+        <li><a href="#" title="file" class="file"></a></li>
+        <li><a href="#" class="message" title="message"></a></li>
+        <li><a href="#" class="directory" title="directory"></a></li>
+    </ul>
+</header>
+<!--  E=commonHeader  -->
+<!--  S=newsfeedHead  -->
+<header id="newsfeedHead">
+    <!--  S=newsfeedHead  -->
+    <section id="newsfeedSearchFrame" class="fl">
+        <div class="SearchBox fl">
+            <input type="text" class="SearchText fl" placeholder="" />
+            <input type="button" class="SearchBtn fr" value="" />
+        </div>
+    </section><!--  E=newsfeedSearchFrame  -->
+</header>
+<!--  E=fileHead  -->
+<!--  S=newsfeedUserList-->
+<article id="newsfeedUserList" class="fl">
+	<section id="GroupsTitle">Grounps(4)</section>
+    <!--  S=UserList-->
+    <ul class="userList">
+        <!--  S=循环体  -->
+        <li>
+        	<span class="grounpsIcon"></span><span class="triangle"></span>
+            <aside class="fl">
+                <h6 class="Rows">all newsfeed</h6>
+                <p class="Rows">1041 people</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>    
+        <!--  E=循环体  -->
+        <li>
+        	<span class="grounpsIcon"></span><span class="triangle"></span>
+            <aside class="fl">
+                <h6 class="Rows">test grounps</h6>
+                <p class="Rows">10 people</p>
+            </aside>
+            <div class="ClearBoth"></div>
+        </li>  
+    </ul><!--  E=UserList -->
+</article><!--  E=newsfeedUserList -->
+<!--  S=newsfeedMain -->
+<article id="newsfeedMain">
+	<!--  S=postNewsfeed -->
+	<section id="postNewsfeedFrame">
+    	<header>Post Newsfeed</header>
+        <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+        <textarea class="sendText fr"></textarea>
+    </section><!--  S=postNewsfeed -->
+    <!--  S=newsfeedList -->
+    <section id="newsfeedList">
+    	<!--  S=循环体  -->
+    	<article class="newsfeed">
+        	<section class="article">
+            	<span class="icon"></span>
+            	<img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fr">
+                    <h6 class="Rows">Pengfei Chen <span class="tips">commented on your file<strong>Shek’s Super... .zip</strong></span><span class="time">22 hours ago</span></h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </section>
+            <section class="comment">
+            	<header class="less">Add comment</header>
+            </section>
+        </article>
+        <!--  E=循环体  -->
+        <article class="newsfeed">
+        	<section class="article">
+            	<span class="list"></span>
+            	<img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fr">
+                    <h6 class="Rows">Pengfei Chen <span class="tips">commented on your file<strong>Shek’s Super... .zip</strong></span><span class="time">22 hours ago</span></h6>
+                    <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </section>
+            <section class="comment">
+            	<header class="more">3 comment<span class="tips"></span></header>
+                <ul class="commentList">
+                	<!--  S=循环体  -->
+                	<li>
+                        <span class="time">22 hours ago</span>
+                        <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                        <aside class="fl">
+                            <h6 class="Rows">Pengfei Chen </h6>
+                            <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                        </aside>
+                        <div class="ClearBoth"></div>
+                    </li>
+                    <!--  E=循环体  -->
+                    <li>
+                        <span class="time">22 hours ago</span>
+                        <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                        <aside class="fl">
+                            <h6 class="Rows">Pengfei Chen </h6>
+                            <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                        </aside>
+                        <div class="ClearBoth"></div>
+                    </li>
+                    <li>
+                        <span class="time">22 hours ago</span>
+                        <img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                        <aside class="fl">
+                            <h6 class="Rows">Pengfei Chen </h6>
+                            <p>Just did a 20min interview for a Chinese sports radio station on what I, as a fellow Asian person from Palo Alto... so random</p>
+                        </aside>
+                        <div class="ClearBoth"></div>
+                    </li>
+                </ul>
+                <div class="sendBox">
+                	<img src="images/atomUser01.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                    <input type="text" class="sendText fl" />
+                    <input type="button" class="sendBtn fr" value="" />
+                </div>
+            </section>
+        </article>
+        
+        <article class="newsfeed">
+        	<section class="article">
+            	<span class="file"></span>
+            	<img src="images/atomUser02.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fr">
+                    <h6 class="Rows">freeman fan <span class="tips"></span><span class="time">22 hours ago</span></h6>
+                    <p>Uploaded a file <strong  style="text-decoration:underline;">Image 0972.jpg</strong> . Shared with 5 people.</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </section>
+            <section class="comment">
+            	<header class="less">Add comment</header>
+            </section>
+        </article>
+        
+        <article class="newsfeed">
+        	<section class="article">
+            	<span class="file"></span>
+            	<img src="images/atomUser04.jpg" class="userPhoto fl" alt="Pengfei Chen" />
+                <aside class="fr">
+                    <h6 class="Rows">lei han <span class="tips"></span><span class="time">22 hours ago</span></h6>
+                    <p>Share a Document <strong  style="text-decoration:underline;">test directory</strong> to you.</p>
+                </aside>
+                <div class="ClearBoth"></div>
+            </section>
+            <section class="comment">
+            	<header class="less">Add comment</header>
+            </section>
+        </article>
+        
+    </section><!--  S=newsfeedList -->
+</article>
+<!--  E=newsfeedMain  -->
+
+</body>
+</html>

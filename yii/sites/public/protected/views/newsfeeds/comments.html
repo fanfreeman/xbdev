@@ -1,0 +1,32 @@
+{foreach $list_comments.data as $comments}
+<li item_id="{$comments.feedcomment_id}"> 
+    <a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+    <h2 class="fr"><a href="/index.php?r=Profile/Index&uid={$comments.user_id}">{getUserInfo($comments.user_id, 'firstname')}&nbsp;{getUserInfo($comments.user_id, 'lastname')}</a></h2>
+    <p class="fr">{$comments.content}</p>
+    <p class="fr time realtime">{$comments.created}</p>
+    <div class="ClearBoth"></div>
+</li>
+{/foreach}
+<script type="text/javascript" charset="utf-8">
+$('.realtime').html(function(){
+	realTime.lang = 'en';
+	$(this).removeClass('realtime');
+	return realTime.outPut($(this).html());
+});
+//添加newsfeed页面回复模块的滚动条
+addScroll("#feed_reply_scroll","200");
+//AutoHeight("#feed_reply_scroll", "188", true);
+
+//页面到底部，
+//alert($(".feed_reply_list").height());
+$("#feed_reply_scroll").scroll(function(){
+	  if ($("#feed_reply_scroll").height()+$(this).scrollTop() - $("#feed_content").height() >= $(".feed_reply_list").height()) {
+		  var last_comment_id = $('.feed_reply_list>li:last-child').attr("item_id"); //当前最后一个评论id
+		  list_Comments($(".feed_reply_list").attr("item_id"),last_comment_id);
+	//var last_newsfeed_id = $('.newsfeed_list>li:last-child').attr("item_id");
+	//loadContent(last_newsfeed_id);
+	
+  }
+	//alert($("#feed_reply_scroll").height());
+})
+</script>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<title>Myspace-profile</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/profile.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jQuery.UI.js"></script>
+	<script type="text/javascript" src="js/UI.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+    <label class="userName">NewsFeedAccount</label>
+    <img src="images/peopleIcon.png" class="userPhoto" alt="Photo" />	
+    <!--  S=返回首页  -->
+    <a href="#" class="fl returnHome">Return Home</a>
+    <!--  E=返回首页  -->
+    <div class="fl line"></div>
+    <!--  S=搜索  -->
+    <div class="search fl">
+        <input type="text" class="text fl" value="" placeholder="Search">
+        <input type="button" class="btn fl">
+    </div>
+    <!--  E=搜索  -->
+    <div class="fl line"></div>
+    <label class="fl msg">98</label>
+</header>
+<!--  E=commonHeader  -->
+<!--  S=profileMain-->
+<div id="profileWrap">
+	<!--  S=profileHead-->
+	<header class="profileHead">
+    	<img src="images/peoplePic01.jpg" class=" fl userPhoto" />
+        <aside class="userInfo fl">
+        	<h1>Chen Pengfei</h1>
+            <p>Atom CEO</p>
+        </aside>
+        <div class="fr userOperations">
+        	<div class="Following">Following</div>
+            <p class="sendMessage">send message</p>
+            <p class="sendFile">send file</p>
+        </div>
+    </header>
+    <!--  E=profileHead-->
+    <!--  S=profileMenu-->
+	<ul class="fl profileMenu">
+    	<li class="selected">info</li>
+        <li>update</li>
+        <li>connections</li>
+    </ul>
+    <!--  E=profileMenu-->
+    <!--  S=profileContent-->
+	<article class="fr profileContent">
+        <!--  S=profileInfo-->
+        <!--<section class="profileInfo">
+        	<table>
+            	<tr>
+                	<th>Current :</th>
+                    <td><p>Managing Directior at BCCY New Power</p></td>
+                </tr>
+                <tr>
+                	<th>Phone Number :</th>
+                    <td><p>1861234567</p></td>
+                </tr>
+                <tr>
+                	<th>Fax :</th>
+                    <td><p>888888888</p></td>
+                </tr>
+                <tr>
+                	<th>E-mail :</th>
+                    <td><p>chenpengfei@myspace.cn</p></td>
+                </tr>
+                <tr>
+                	<th>Depatment :</th>
+                    <td><p>Product Department </p></td>
+                </tr>
+                <tr>
+                	<th>Posation :</th>
+                    <td><p>CEO</p></td>
+                </tr>
+                <tr>
+                	<th>Education :</th>
+                    <td><p>New York University</p></td>
+                </tr>
+                <tr>
+                	<th>Rcommendations :</th>
+                    <td><p>Managing Directior at BCCY New Power</p></td>
+                </tr>
+                <tr>
+                	<th>Web Site :</th>
+                    <td><p>Facebook</p><p>Tiwtter</p></td>
+                </tr>
+            </table>
+        </section>-->
+        <!--  E=profileInfo-->		
+        <!--  S=profileUpdate-->	
+<!--        <section class="profileUpdate">
+        	<header>
+            	<ul>
+                    <li class="selected">Following</li>
+                    <li><span>/</span></li>
+                	<li>Follower</li>
+                </ul>
+            </header>
+            <!--  S=followList  -->
+            <!--<ul class="followList">
+            	<!--  S=循环体  -->
+            	<!--<li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <!--  E=循环体  -->
+               <!-- <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+            </ul>
+            <!--  E=followList  -->
+        <!--</section>-->
+        <!--  E=profileUpdate-->	
+        <!--  S=profileConnections-->	
+        <section class="profileUpdate">
+        	<header>
+            	<ul>
+                	<li class="selected">Pengfei only</li>
+                    <li><span>/</span></li>
+                    <li>All</li>
+                </ul>
+            </header>
+            <!--  S=followList  -->
+            <ul class="followList">
+            	<!--  S=循环体  -->
+            	<li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <!--  E=循环体  -->
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+                <li>
+                	<img src="images/peoplePic01.jpg" class="userPhoto fl" alt="" />
+                    <aside class="fl">
+                    	<h6 class="userName">Chen Pengfei</h6>
+                        <p class="userMessage">hdhshdsadhjshdjhdajfkjlsajdlsajdlksajdckmasdjcsamkdjcasjdcsakm</p>
+                    </aside>
+                    <p class="publishTime fr">2012-12-12 12:12</p>
+                    <div class="ClearBoth"></div>
+                </li>
+            </ul>
+            <!--  E=followList  -->
+        </section>
+        <!--  E=profileConnections-->	
+    </article>
+    <!--  E=profileContent-->
+</div>
+<!--  E=profileMain-->
+
+</body>
+</html>

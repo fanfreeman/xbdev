@@ -1,0 +1,219 @@
+.im_chat{
+	width: 178px;
+	line-height:24px;
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	background-color:#fff;
+	cursor:pointer;
+	}
+	
+.ChatOrderedTitle {height:28px; display:block; background-color:#999; padding-left:10px;}
+
+.fbChatOrderedList  { padding:0px;}
+
+.fbChatOrderedList .item a{padding-right:22px}
+.fbChatOrderedList .item.music a{padding-right:42px}
+.fbChatOrderedList .item a:hover{box-shadow:inset 2px 0 2px -2px #b2b9c9}
+.fbChatOrderedList .item .status{right:12px}
+.fbChatOrderedList .separator .text{background-color:#f2f4f8}
+
+.fbChatOrderedList .item,.fbChatOrderedList .separator{float:left;width:100%}
+.fbChatOrderedList .item a{color:#333;display:block;padding:2px 20px 2px 10px;position:relative}
+.fbChatOrderedList .item a:hover,.fbChatOrderedList .item a.selected{background-color:#e0e4ee;text-decoration:none}
+.fbChatOrderedList .item a .pic{float:left;height:28px;margin-right:8px;width:28px}
+.fbChatOrderedList .item a .name{display:block;line-height:28px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fbChatOrderedList .item .status{display:block;height:14px;margin-top:-7px;position:absolute;right:9px;top:50%;width:7px}
+
+.im_content
+{	
+	height:256px;
+	line-height:24px;
+	position: fixed;
+	right: 198px;
+	bottom: 0;
+	padding:0px;
+	}
+	
+.im_content_chat
+{
+	margin:0px;
+	padding:0px;
+	width:804px;
+	height:256px;
+	display:block;	
+	overflow:hidden; 
+	position:relative;
+	float:right;
+	}
+.ul_im_content_chat{position:absolute; right:0px; padding:0px; float:right;}
+
+.ul_im_content_chat li{ 
+	width: 256px;
+	display:block;
+	float:right;
+	padding:0px;
+	border-left:#999 solid 1px;
+	border-right:#999 solid 1px;
+	position:relative;
+	background-color:#FFF;
+	}	
+	
+	
+
+		
+.im_left
+{
+	margin:228px 0px 0px 0px;
+	height:28px;
+	width:26px;
+	position:relative;
+	float:right;
+	display:none;
+	}	
+	
+.im_leftright_noactive {background-color:#999;}	
+.im_leftright_active {background-color:#30F;}	
+		
+.im_right
+{
+	margin:228px 0px 0px 0px;
+	height:28px;
+	width:26px;
+	position:relative;
+	float:right;
+	display:none;
+	}				
+
+	
+
+	
+.li_chat_windows_open_active{
+	height:256px;
+	margin:0px 5px 0 5px;
+	}	
+.li_chat_windows_open_noactive{
+	height:28px;
+	margin:228px 5px 0 5px;
+	}
+.li_chat_windows_left	{
+	height:28px;
+	margin:228px 5px 0 5px;
+	}
+.li_chat_windows_right{
+	height:28px;
+	margin:228px 5px 0 5px;
+	}		
+.li_chat_windows_open_active	 .chat_windows_content{ display:block;}
+.li_chat_windows_open_noactive	 .chat_windows_content{ display:none;}
+.li_chat_windows_left	 .chat_windows_content{ display:none;}
+.li_chat_windows_right	 .chat_windows_content{ display:none;}
+		
+.active_chat{ padding-left:10px;}	
+
+.chat_windowsTitle span.close {
+	margin:10px 10px 0 0;
+	width:9px;
+	height:9px;
+	text-indent:9999px;
+	overflow:hidden;
+	background:url(../images/icon01.png) -42px -27px;
+	cursor:pointer;
+}
+
+
+
+.ChatOrderedSearch
+{
+	width: 178px; height:24px; display:block; float:left; padding-left:10px;
+	}
+
+
+		
+.chat_windowsTitle {height:28px; display:block; background-color:#999; padding-left:10px; line-height:28px; cursor:pointer;}
+.chat_windowsTitle_active {background-color:#30F;}
+.chat_windowsTitle_noactive {background-color:#999;}
+.chat_history {height:200px; display:block;  padding:0px; line-height:28px; overflow-y:scroll;}
+.chat_send {height:28px; display:block; padding-left:10px; line-height:28px;}
+.chat_send input{ width:238px;}
+
+.ul_chatlist{ float:left; padding:0px; display:block;}
+
+.ul_chatlist li{width:238px; display:block; float:left; background-color:#FFF;}
+.ul_chatlist .profilePhoto .img{float:left;margin-right:3px;display:block;height:32px;width:32px}
+.ul_chatlist .messages{float:left;margin-left:2px}
+
+@-webkit-keyframes CutBackground {
+	0% {
+		background:#f00;
+	}
+	50%% {
+		background:#fff;
+	}
+	100% {
+		background:#f00;
+	}
+}
+
+@-moz-keyframes CutBackground {
+	0% {
+		background:#f00;
+	}
+	50%% {
+		background:#fff;
+	}
+	100% {
+		background:#f00;
+	}
+}
+
+@-ms-keyframes CutBackground {
+	0% {
+		background:#FFF;
+	}
+	50%% {
+		background:#F00;
+	}
+	100% {
+		background:#FFF;
+	}
+}
+
+@-o-keyframes CutBackground {
+	0% {
+		background:#FFF;
+	}
+	50%% {
+		background:#F00;
+	}
+	100% {
+		background:#FFF;
+	}
+}
+
+@keyframes CutBackground {
+	0% {
+		background:#FFF;
+	}
+	50%% {
+		background:#F00;
+	}
+	100% {
+		background:#FFF;
+	}
+}
+
+.CutBackground {
+	-webkit-animation-name: CutBackground;
+	-moz-animation-name: CutBackground;
+	-ms-animation-name: CutBackground;
+	-o-animation-name: CutBackground;
+	animation-name: CutBackground;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+}
+
+
+

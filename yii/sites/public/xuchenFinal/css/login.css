@@ -1,0 +1,137 @@
+@charset "utf-8";
+/**
+* Description:login style 
+* Developers:xuchen
+**/
+
+
+/* login
+-------------------------------------------------------------- */
+
+#loginMain {
+	position:fixed; top:200px;
+	width:350px;
+	padding-bottom:15px;
+	background:#f2f4f6;
+	border-radius:4px;
+	box-shadow:0px -1px 1px #fcfcfc inset, 0px 1px 10px #a8a9ac;
+}
+#loginMain header {
+	width:97%; height:45px;
+	background:url(../images/loginIcon.png) repeat-x 0 43px;
+	text-align:center; text-shadow:1px 1px 1px #fff;
+	font:700 16px/45px Arial, Helvetica, sans-serif; color:#6e747f;
+}
+#loginMain .loginText {
+	position:relative;
+	width:230px; height:20px;
+	padding:8px 0 8px 40px; margin-top:22px;
+	border-top:1px solid #c5c7cc; border-bottom:1px solid #fff; border-radius:4px;
+	box-shadow:0 1px 3px #d0d3d7 inset;
+}
+#loginMain .userName {
+	background: url(../images/loginIcon.png) no-repeat -97px -4px #dcdee2;
+}
+#loginMain .userPassword {
+	background: url(../images/loginIcon.png) no-repeat -97px -44px #dcdee2;
+}
+#loginMain .loginText input {
+	width:190px; height:20px;
+	background:transparent;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#848485;
+	border:none;
+}
+#loginMain .userName input {
+	width:220px;
+}
+#loginMain .loginText input.loginBtn {
+	position:absolute; right:3px; top:0;
+	width:36px; height:36px;
+	background:url(../images/loginIcon.png) no-repeat -95px -84px;
+	border:none;
+	cursor:pointer;
+}
+#loginMain .forget {
+	width:270px; height:20px;
+	margin-top:10px;
+	text-align:right; text-shadow:1px 1px 1px #fff;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#bfc2c5;
+}
+#loginMain .forget a {
+	text-decoration:none;
+	color:#bfc2c5;
+}
+
+/* forgot password
+-------------------------------------------------------------- */
+
+#loginMain .userMail {
+	background: url(../images/loginIcon.png) no-repeat -97px -122px #dcdee2;
+}
+#loginMain .sendrMail {
+	width:68px; height:31px;
+	margin:15px 0 0 242px;
+	background: url(../images/loginIcon.png) no-repeat -25px -11px;
+	border:none;
+	cursor:pointer;
+}
+#loginMain .signUp {
+	width:93px; height:31px;
+	margin:15px 0 0 217px;
+	background: url(../images/loginIcon.png) no-repeat 0 -51px;
+	border:none;
+	cursor:pointer;
+}
+
+/* Download Browser
+-------------------------------------------------------------- */
+
+#loginMain .browserTips {
+	width:360px;
+	text-align:center; text-shadow:1px 1px 1px #fff;
+	font:700 16px/45px Arial, Helvetica, sans-serif; color:#6e747f;
+}
+#loginMain .browserList {
+	width:280px;
+	padding-top:10px;
+}
+#loginMain .browserList li {
+	width:60px; height:60px;
+	margin:0 16px;
+	overflow:hidden;
+}
+#loginMain .browserList li a {
+	display:block;
+	width:60px; height:60px;
+	background:url(../../images/BrowserIcon.png) no-repeat;
+	text-indent:-999px;
+}
+#loginMain .browserList li a.safari {
+	background-position:0 0;
+}
+#loginMain .browserList li a.chrome {
+	background-position:0 -60px;
+}
+#loginMain .browserList li a.firefox {
+	background-position:0 -120px;
+}
+#loginMain .browserList li a.ie10 {
+	background-position:0 -180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

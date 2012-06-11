@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<title>Myspace-newsfeed</title>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<link href="css/common.css" rel="stylesheet" type="text/css">
+	<link href="css/newsfeed.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jQuery.UI.js"></script>
+	<script type="text/javascript" src="js/UI.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+</head>
+<body>
+
+<!--  S=commonHeader  -->
+<header class="commonHeader">
+    <label class="userName"><a href="#">NewsFeedAccount</a></label>
+    <img src="images/peopleIcon.png" class="userPhoto" alt="Photo" />	
+    <!--  S=返回首页  -->
+    <a href="#" class="fl returnHome">Return Home</a>
+    <!--  E=返回首页  -->
+    <div class="fl line"></div>
+    <!--  S=搜索  -->
+    <div class="search fl">
+        <input type="text" class="text fl" value="" placeholder="Search">
+        <input type="button" class="btn fl">
+    </div>
+    <!--  E=搜索  -->
+    <div class="fl line"></div>
+    <label class="fl msg">98</label>
+</header>
+<!--  E=commonHeader  -->
+<!--newsfeed start-->
+<article class="newsfeed fl">
+	<div class="bottom"><img src="images/NewsfeedListBottom.png" alt="" /></div>
+	<header>
+		<!--  S=列表分类  -->
+    	<div class="fr categoryList">NewsFeed
+        	<ul class="category">
+              <li>NewsFeed</li>
+              <li>Liked</li>
+              <li>Reply</li>
+              <li>Files</li>
+            </ul>
+        </div>
+        <!--  E=列表分类  -->
+        <!--  S=添加Newsfeed按钮  -->
+        <img src="images/addNewsFeedBtn.gif" class="fl addNewsfeed" alt="addNewsfeed" />
+      <div class="clearBoth"></div>
+        
+	</header>
+	<!--  S=PublishBox  -->
+        <div class="publishBox">
+    		<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+        	<div class="InputNormarl">
+      			<label class="publishInfo">@UserName</label>
+  	    		<input type="text" class="publishText" />
+  	  		</div>
+   	    <div class="addFile fl">+ Add File</div>
+        	<input type="button" value="Post" class="btn fr">
+    	</div>
+    	<!--  E=PublishBox  -->
+  	<ul class="newsfeed_list">
+  		<!--  S=循环体  -->
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2><a href="#">Username</a></h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+		<!--  E=循环体  -->
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl notLiked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl notLiked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl notLiked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+        <li> 
+			<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+			<h2>Username</h2>
+			<p> Great design should be shared. <a href="#">#design</a> </p>
+			<ul class="detail">
+            	<li class="fl time">7 Minutes ago</li>
+                <li class="fl liked">20</li>
+                <li class="fl reply">20</li>
+             </ul>
+			<span class="icon"></span>
+		</li>
+	</ul>
+</article>
+<!--newsfeed end-->
+<!--feed reply start-->
+<article class="feed_reply">
+<div class="feed_reply_bottom"><img src="images/NewsfeedReplyBottom.png" alt="" /></div>
+  <header> 
+    <div class="fr close">Close</div>
+    <div class="user fl">
+    	<img src="images/peopleIcon.png" width="30" height="30" alt="name" class="user_photo">
+      <a href="#" class="user_name">About @Username</a> 
+    </div>
+  </header>
+  <div id="feed_reply_scroll">
+	  <div class="feed_reply_con"> 30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs.30 Beautiful and Creative Invitation Card Designs. </div>
+	  <ul class="detail">
+	    <li class="fl time">7 Minutes ago</li>
+	    <li class="fl liked">20</li>
+	    <li class="fl reply">20</li>
+	  </ul>
+	  <ul class="feed_reply_list">
+	  		<!--  S=循环体  -->
+	        <li> 
+				<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+				<h2 class="fr"><a href="#">Username</a></h2>
+				<p class="fr">Great design should be shared.Great design should be shared.</p>
+	            <p class="fr time">7 Minutes ago </p>
+                <div class="ClearBoth"></div>
+			</li>
+			<!--  E=循环体  -->
+	        <li> 
+				<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+				<h2 class="fr">Username</h2>
+				<p class="fr">Great design should be shared.Great design should be shared.</p>
+	            <p class="fr time">7 Minutes ago </p>
+                <div class="ClearBoth"></div>
+			</li>
+	        <li> 
+				<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+				<h2 class="fr">Username</h2>
+				<p class="fr">Great design should be shared.Great design should be shared.Great design should be shared.</p>
+	            <p class="fr time">7 Minutes ago </p>
+                <div class="ClearBoth"></div>
+			</li>
+            <li> 
+				<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+				<h2 class="fr">Username</h2>
+				<p class="fr">Great design should be shared.Great design should be shared.</p>
+	            <p class="fr time">7 Minutes ago </p>
+                <div class="ClearBoth"></div>
+			</li>
+	        <li> 
+				<a href="#"><img src="images/peopleIcon.png" width="50" height="50" alt="name" class="user_photo fl"></a>
+				<h2 class="fr">Username</h2>
+				<p class="fr">Great design should be shared.Great design should be shared.Great design should be shared.</p>
+	            <p class="fr time">7 Minutes ago </p>
+                <div class="ClearBoth"></div>
+			</li>
+	  </ul>
+	  <textarea></textarea>
+	    <input type="button" value="Reply" class="btn fr">
+
+  </div>
+</article>
+<!--feed reply end-->
+<!--  S=notification  -->
+<article class="notification">
+	<header>
+    	<h3 class="fl">Notification</h3>
+        <span class="fr"><img src="images/Close.gif" id="CloseNotification" alt="Close" /></span>
+    </header>
+    <div class="content">
+      <ul class="notificationList">
+        <li>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+            <h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+        <h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+        <h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+        <li>
+        	<span class="fl"><img src="images/Dot.gif" alt="" /></span>
+            <a href="#"><img src="images/peopleIcon.png" alt="name" class="user_photo fl"></a>
+<h6>Pengfei shared a picture</h6>
+            <p>November 30 at 12:35am</p>
+        </li>
+      </ul>
+    </div>
+</article>
+<!--  E=notification  -->
+<!--popup fixed start-->
+<div class="popup_fixed "> Dorthy Wu </div>
+<!--popup fixed end-->
+</body>
+</html>

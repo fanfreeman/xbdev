@@ -1,0 +1,300 @@
+@charset "utf-8";
+/**
+* Description:file style 
+* Developers:xuchen
+**/
+
+/*newsfeed	Head
+-------------------------------------------------------------- */
+
+#newsfeedHead {
+	position:fixed; left:0; top:48px; z-index:20;
+	width:100%; height:51px;
+	background:url(../images/commonBg.png) repeat-x 0 -48px;
+}
+#newsfeedHead #newsfeedSearchFrame {
+	width:238px; height:40px;
+	padding:5px 0;
+	background:url(../images/messageIconBg.png) no-repeat 234px 10px;
+}
+/*  file Search  */
+#newsfeedHead #newsfeedSearchFrame .SearchBox {
+	width:218px; height:26px;
+	margin:7px 0 0 8px;
+	background:#fff;
+	border:1px solid #a9b0b7;
+	box-shadow:1px 1px 1px #cbd1d7 inset, -1px 1px 1px #dadde1;
+	border-radius:13px;
+}
+#newsfeedHead #newsfeedSearchFrame .SearchBox .SearchText {
+	width:173px; height:20px;
+	margin:3px 0 0 10px;
+	background:transparent;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+#newsfeedHead #newsfeedSearchFrame .SearchBox .SearchBtn {
+	width:26px; height:26px;
+	margin-right:5px;
+	background:url(../images/messageIconBg.png) no-repeat -4px -26px;
+	border:none;
+}
+
+/*	fileUserList
+-------------------------------------------------------------- */
+
+#newsfeedUserList {
+	position:fixed; left:0; top:98px;
+	width:235px;
+	background:#eef2f5;
+	border-right:1px solid #a6adb7;
+	box-shadow:1px 0px 1px #ccd0d6;
+}
+#newsfeedUserList #GroupsTitle {
+	width:100%;
+	margin-top:-1px; padding:9px 0;
+	background:#e1e7eb;
+	text-indent:12px; text-shadow:1px 1px 1px #f1f4f6;
+	font:700 14px/12px Helvetica, Arial, sans-serif; color:#666;
+	border-top:1px solid #b3bac4; border-bottom:1px solid #b3bac4;
+	box-shadow: 0 -1px 1px #d8dfe3 inset;
+}
+/*  user List  */
+#newsfeedUserList .userList {
+	width:100%;
+	overflow:auto;
+}
+#newsfeedUserList .userList li {
+	position:relative;
+	width:100%;
+	margin-top:1px; padding:10px 0 11px;
+	border-top:1px solid #f2f2f2; border-bottom:1px solid #dcd7d4;
+	box-shadow: 0 1px 1px #fcfcfc;
+	cursor:pointer;
+}
+#newsfeedUserList .userList li span {
+	position:absolute; display:block;
+}
+#newsfeedUserList .userList li span.grounpsIcon {
+	top:17px; left:10px;
+	width:28px; height:22px;
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 0;
+}
+#newsfeedUserList .userList li span.triangle {
+	top:25px; right:10px;
+	width:5px; height:8px;
+	background:url(../images/newsfeedIconBg.png) no-repeat -30px 0;
+}
+#newsfeedUserList .userList li:hover,#newsfeedUserList .userList li.selected {
+	background:#53aeef;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background:-moz-linear-gradient(top, #6fbff2, #369dec);
+	border-top:1px solid #1688de; border-bottom:1px solid #1688de;
+	box-shadow:inset 0 0 1px #6fbff2, 0 0 1px #caedee;
+}
+#newsfeedUserList .userList li:hover span.grounpsIcon,#newsfeedUserList .userList li.selected  span.grounpsIcon {
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 -22px;
+}
+#newsfeedUserList .userList li:hover span.triangle,#newsfeedUserList .userList li.selected  span.triangle{
+	background:url(../images/newsfeedIconBg.png) no-repeat -30px -10px;
+}
+#newsfeedUserList .userList li:hover aside h6,#newsfeedUserList .userList li:hover aside p,#newsfeedUserList .userList li.selected aside h6,#newsfeedUserList .userList li.selected aside p {
+	text-shadow:none;
+	color:#fff;
+}
+#newsfeedUserList .userList li aside {
+	margin-left:46px;
+	width:160px;
+}
+#newsfeedUserList .userList li aside h6 {
+	width:160px;
+	text-shadow:1px 1px 1px #fff;
+	font:700 14px/18px Arial, Helvetica, sans-serife; color:#656565;
+}
+#newsfeedUserList .userList li aside p {
+	width:160px;
+	word-wrap:break-word;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#999;
+}
+
+/*Newsfeed	main
+-------------------------------------------------------------- */
+
+#newsfeedMain {
+	width:588px;
+	margin:100px 0 0 238px; padding:20px 20px 0;
+}
+/*  post newsfeed  */
+#newsfeedMain #postNewsfeedFrame {
+	width:565px; height:100px;
+	padding:10px; margin-bottom:10px;
+	background:#f6f8fa;
+	border:1px solid #b1b8c2; border-radius:3px;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 1px #d0d4d9;
+}
+#newsfeedMain #postNewsfeedFrame header {
+	width:565px; height:18px;
+	padding-bottom:5px;
+	text-shadow:1px 1px 1px #fdfdfe;
+	font:700 14px/18px Helvetica, Arial, sans-serif; color:#666;
+}
+#newsfeedMain #postNewsfeedFrame .userPhoto {
+	width:34px; height:34px;
+	border-radius:3px;
+}
+#newsfeedMain #postNewsfeedFrame .sendText {
+	width:508px; height:65px;
+	padding:5px;
+	background:#f6f8fa;
+	border:1px solid #b1b8c2; border-radius:4px;
+	box-shadow:1px 1px 3px #e9ecef inset, 1px 1px 1px #f9fafc;
+}
+/*  newsfeed list   */
+#newsfeedMain #newsfeedList {
+	width:585px;
+	border-top:1px dashed #b2b9bd;
+}
+#newsfeedMain .newsfeed {
+	width:585px;
+	margin-top:10px;
+	background:#f6f8fa;
+	border:1px solid #b1b8c2; border-radius:3px;
+	box-shadow:1px 1px 1px #fff inset, 1px 1px 1px #d0d4d9;
+}
+#newsfeedMain .newsfeed .article {
+	position:relative;
+	width:565px;
+	padding:10px 10px 5px;
+}
+#newsfeedMain .normal .article span.icon {
+	position:absolute; display:block; top:35px; right:15px;
+	width:28px; height:22px;
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 -44px;
+	cursor:pointer;
+}
+#newsfeedMain .list .article span.icon {
+	position:absolute; display:block; top:35px; right:15px;
+	width:28px; height:22px;
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 -66px;
+	cursor:pointer;
+}
+#newsfeedMain .file .article span.icon {
+	position:absolute; display:block; top:28px; right:15px;
+	width:28px; height:22px;
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 -88px;
+	cursor:pointer;
+}
+#newsfeedMain .newsfeed .article .userPhoto {
+	width:34px; height:34px;
+	border-radius:3px;
+}
+#newsfeedMain .newsfeed .article aside {
+	width:520px;
+}
+#newsfeedMain .newsfeed .article aside h6 {
+	width:520px;
+	text-shadow:1px 1px 1px #fff;
+	font:700 14px/18px Arial, Helvetica, sans-serife; color:#666;
+}
+#newsfeedMain .newsfeed .article aside h6 span.tips {
+	font:400 12px/18px Arial, Helvetica, sans-serife; color:#999;
+}
+#newsfeedMain .newsfeed .article aside h6 span.tips strong {
+	font:700 12px/18px Arial, Helvetica, sans-serife; color:#999;
+}
+#newsfeedMain .newsfeed .article aside h6 span.time {
+	position:absolute; display:block; top:13px; right:10px;
+	font:400 12px/12px Arial, Helvetica, sans-serife; color:#999;
+}
+#newsfeedMain .newsfeed .article aside p {
+	width:475px;
+	padding-right:45px;
+	word-wrap:break-word;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#666;
+}
+#newsfeedMain .newsfeed .comment {
+	width:585px;
+	background:#eef2f5;
+	border-top:1px dashed #d6dbe0;
+	border-radius:0 0 4px 4px;
+}
+#newsfeedMain .newsfeed .comment header.less {
+	width:565px; height:30px;
+	background:url(../images/newsfeedIconBg.png) no-repeat -40px 8px;
+	text-indent:20px; text-shadow:1px 1px 1px #fbfcfc;
+	font:700 12px/30px Helvetica, Arial, sans-serif; color:#999;
+}
+#newsfeedMain .newsfeed .comment header.more {
+	position:relative;
+	width:565px; height:30px;
+	background:url(../images/newsfeedIconBg.png) no-repeat -40px 8px;
+	text-indent:20px; text-shadow:1px 1px 1px #fbfcfc;
+	font:700 12px/30px Helvetica, Arial, sans-serif; color:#999;
+}
+#newsfeedMain .newsfeed .comment header.more span.tips {
+	position:absolute; top:13px; right:18px; display:block;
+	width:8px; height:5px;
+	background:url(../images/newsfeedIconBg.png) no-repeat -30px -20px;
+}
+#newsfeedMain .newsfeed .comment .commentList {
+	width:585px;
+}
+#newsfeedMain .newsfeed .comment .commentList li {
+	width:565px; position:relative;
+	padding:10px;
+}
+#newsfeedMain .newsfeed .comment .commentList li:nth-child(odd) {
+	background:#e3ebf1;
+}
+#newsfeedMain .newsfeed .comment .commentList li span.time {
+	position:absolute; display:block; top:10px; right:10px;
+	font:400 12px/14px Arial, Helvetica, sans-serife; color:#999;
+}
+#newsfeedMain .newsfeed .comment .commentList li .userPhoto {
+	width:24px; height:24px;
+	border-radius:3px;
+}
+#newsfeedMain .newsfeed .comment .commentList li aside {
+	width:450px;
+	padding-left:10px;
+}
+#newsfeedMain .newsfeed .comment .commentList li aside h6 {
+	width:450px;
+	text-shadow:1px 1px 1px #fff;
+	font:700 14px/18px Arial, Helvetica, sans-serife; color:#666;
+}
+
+#newsfeedMain .newsfeed .comment .commentList li aside p {
+	width:450px;
+	word-wrap:break-word;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#999;
+}
+#newsfeedMain .newsfeed .comment .sendBox {
+	width:565px; height:50px;
+	border-radius:0 0 4px 4px;
+}
+#newsfeedMain .newsfeed .comment .sendBox .userPhoto {
+	width:24px; height:24px;
+	margin-top:13px;
+	border-radius:3px;
+}
+#newsfeedMain .newsfeed .comment .sendBox .sendText {
+	width:443px; height:18px;
+	margin:10px 0 0 10px;
+	padding:5px;
+	background:#f6f8fa;
+	border:1px solid #b1b8c2; border-radius:5px;
+	box-shadow:1px 1px 3px #e9ecef inset, 1px 1px 1px #f9fafc;
+}
+#newsfeedMain .newsfeed .comment .sendBox .sendBtn {
+	width:66px; height:30px;
+	margin-top:10px;
+	background:url(../images/newsfeedIconBg.png) no-repeat 0 -110px;
+	border:0;
+	cursor:pointer;
+}
+
+
+
+
+

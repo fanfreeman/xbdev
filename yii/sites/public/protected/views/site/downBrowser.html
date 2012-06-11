@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="xuchen" />
+	<title>Myspace-profile</title>
+	<link href="/css/base.css" rel="stylesheet" type="text/css">
+	<link href="/css/common.css" rel="stylesheet" type="text/css">
+	<link href="/css/login.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/js/jQuery/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="/js/jQuery/jQuery.Atom.js"></script>
+	<!–[if lt IE 9]> <script src="js/html5.js"></script>
+	<![endif]–>
+    <script>
+    	 $(document).ready(function() {
+			$("#loginMain").atomFly({ type : "fadeIn", isMask : false});	 
+		});
+    </script>
+</head>
+<body>
+
+<!--  S=loginMain  -->
+<article id="loginMain" style="width:400px;">
+	<header>Sign In</header>
+    <section class="browserTips">
+    	我们支持以下浏览器，您可以通过我们下载安装最新版的Chrome, Firefox, Safari
+    </section>
+    <ul class="browserList">
+    	<li class="fl"><a href="http://appldnld.apple.com/Safari5/041-5172.20120326.RRe45/SafariSetup.exe" class="safari" title="safari">safari</a></li>
+        <li class="fl"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html" class="chrome" title="chrome">chrome</a></li>
+        <li class="fl"><a href="http://download.firefox.com.cn/releases/webins3.0/official/zh-CN/Firefox-latest.exe" class="firefox" title="firefox">firefox</a></li>
+        <!--<li class="fl"><a href="#" class="ie10" title="ie10">ie10</a></li>-->
+    </ul>
+</article>
+<!--  E=loginMain  -->
+</body>
+</html>

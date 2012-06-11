@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+	<script type="text/javascript" src="js/jQuery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.Atom.js"></script>
+</head>
+
+<body>
+
+<form method="POST" enctype="multipart/form-data" action="http://storage.atom.com/index.php?r=site/uploadFile">
+File to upload: <input type="file" name="uploaded_file"><br>
+<input type="text" name="curr_dir_id"  value="1" /> 
+<br>
+<input type="submit" value="Press"> to upload the file!
+<div id="dropbox" style="width:100px; height:100px; background:#000;"></div>
+<input id="multiple" type="file" multiple name="foo">
+</form>
+<script>
+(function($) {
+    $.fn.html5Uploader = function(options) {
+        var crlf = '\r\n';
+        var boundary = "iloveigloo";
+        var dashes = "--";
+        var settings = {
+            "name": "uploadedFile",
+            "postUrl": "Upload.aspx",
+            "onClientAbort": null,
+            "onClientError": null,
+            "onClientLoad": null,
+            "onClientLoadEnd": null,
+            "onClientLoadStart": null,
+            "onClientProgress": null,
+            "onServerAbort": null,
+            "onServerError": null,
+            "onServerLoad": null,
+            "onServerLoadStart": null,
+            "onServerProgress": null,
+            "onServerReadyStateChange": null,
+            "onSuccess": null
+        };
+        if (options) {
+            $.extend(settings, options);
+        }
+        return this.each(function(options) {
+            var $this = $(this);
+            if ($this.is("[type='file']")) {
+                $this.bind("change",
+                function() {
+                    var files = this.files;
+                    for (var i = 0; i < files.length; i++) {
+                        fileHandler(files[i]);
+                    }
+                });
+            } else {
+                $this.bind("dragenter dragover",
+                function() {
+                    $(this).addClass("hover");
+                    return false;
+                }).bind("dragleave",
+                function() {
+                    $(this).removeClass("hover");
+                    return false;
+                }).bind("drop",
+                function(e) {
+                    $(this).removeClass("hover");
+                    var files = e.originalEvent.dataTransfer.files;
+                    for (var i = 0; i < files.length; i++) {
+                        fileHandler(files[i]);
+                    }
+                    return false;
+                });
+            }
+        });
+        function fileHandler(file) {
+            var fileReader = new FileReader();
+            fileReader.onabort = function(e) {
+                if (settings.onClientAbort) {
+                    settings.onClientAbort(e, file);
+                }
+            };
+            fileReader.onerror = function(e) {
+                if (settings.onClientError) {
+                    settings.onClientError(e, file);
+                }
+            };
+            fileReader.onload = function(e) {
+                if (settings.onClientLoad) {
+                    settings.onClientLoad(e, file);
+                }
+            };
+            fileReader.onloadend = function(e) {
+                if (settings.onClientLoadEnd) {
+                    settings.onClientLoadEnd(e, file);
+                }
+            };
+            fileReader.onloadstart = function(e) {
+                if (settings.onClientLoadStart) {
+                    settings.onClientLoadStart(e, file);
+                }
+            };
+            fileReader.onprogress = function(e) {
+                if (settings.onClientProgress) {
+                    settings.onClientProgress(e, file);
+                }
+            };
+            fileReader.readAsDataURL(file);
+            var xmlHttpRequest = new XMLHttpRequest();
+            xmlHttpRequest.upload.onabort = function(e) {
+                if (settings.onServerAbort) {
+                    settings.onServerAbort(e, file);
+                }
+            };
+            xmlHttpRequest.upload.onerror = function(e) {
+                if (settings.onServerError) {
+                    settings.onServerError(e, file);
+                }
+            };
+            xmlHttpRequest.upload.onload = function(e) {
+                if (settings.onServerLoad) {
+                    settings.onServerLoad(e, file);
+                }
+            };
+            xmlHttpRequest.upload.onloadstart = function(e) {
+                if (settings.onServerLoadStart) {
+                    settings.onServerLoadStart(e, file);
+                }
+            };
+            xmlHttpRequest.upload.onprogress = function(e) {
+                if (settings.onServerProgress) {
+                    settings.onServerProgress(e, file);
+                }
+            };
+            xmlHttpRequest.onreadystatechange = function(e) {
+                if (settings.onServerReadyStateChange) {
+                    settings.onServerReadyStateChange(e, file, xmlHttpRequest.readyState);
+                }
+                if (settings.onSuccess && xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) {
+                    settings.onSuccess(e, file, xmlHttpRequest.responseText);
+                }
+            };
+            xmlHttpRequest.open("POST", settings.postUrl, true);
+            if (file.getAsBinary) {
+                var data = dashes + boundary + crlf + "Content-Disposition: form-data;" + "name=\"" + settings.name + "\";" + "filename=\"" + unescape(encodeURIComponent(file.name)) + "\"" + crlf + "Content-Type: application/octet-stream" + crlf + crlf + file.getAsBinary() + crlf + dashes + boundary + dashes;
+                xmlHttpRequest.setRequestHeader("Content-Type", "multipart/form-data;boundary=" + boundary);
+                xmlHttpRequest.sendAsBinary(data);
+            } else if (window.FormData) {
+                var formData = new FormData();
+                formData.append(settings.name, file);
+                xmlHttpRequest.send(formData);
+            }
+        }
+    };
+})(jQuery);
+$(function() {
+	$("#dropbox, #multiple").html5Uploader({
+		name: "foo",
+		postUrl: "http://storage.atom.com/index.php?r=site/uploadFile"	
+	});
+});
+</script>
+</body>
+</html>

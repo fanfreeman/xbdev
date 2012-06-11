@@ -1,0 +1,331 @@
+@charset "utf-8";
+/**
+* Description:message style 
+* Developers:xuchen
+**/
+
+body {
+	background:url(../images/newsFeedBodyBg.jpg) repeat fixed;
+}
+#messageMask {
+	position:relative; left:0; top:0;
+	z-index:9;
+}
+/*	messageMain
+-------------------------------------------------------------- */
+#messageMain {
+	width:841px;
+	margin-top:55px;
+}
+
+/*	userFrame
+-------------------------------------------------------------- */
+#messageMain #userFrame {
+	width:300px;
+	background:#fff;
+	border-right:1px solid #cbcbcb;
+	border-radius:5px 5px 0 0;
+}
+#messageMain #userFrame header {
+	width:286px; height:26px;
+	padding:7px;
+	border-bottom:1px solid #cbcbcb;
+}
+#messageMain #userFrame header .add {
+	width:26px; height:26px;
+	cursor:pointer;
+}
+#messageMain #userFrame header .messageSearch {
+	width:240px; height:24px;
+	padding:0 5px;
+	background:#f8f8f8;
+	border:1px solid #ecedee; border-radius:3px;
+}
+#messageMain #userFrame header .messageSearch .searchText {
+	width:210px; height:20px;
+	margin:2px 0;
+	background:#f8f8f8;
+	border:none;
+	font:400 14px/20px Arial, Helvetica, sans-serif;
+}
+#messageMain #userFrame header .messageSearch .searchBtn {
+	width:20px; height:20px;
+	margin:2px;
+	background:url(../images/messageSearchBtn.gif) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+
+#messageMain #userFrame .userList {
+	width:300px;
+}
+#messageMain #userFrame .userList li {
+	width:245px;
+	padding:12px 30px 12px 25px;
+	border-bottom:1px solid #cbcbcb;
+	cursor:pointer;
+}
+#messageMain #userFrame .userList li .userPhoto {
+	width:33px; height:33px;
+	padding:2px 4px 4px 2px;
+	background:url(../images/profileFollowListPhotoBg.png) no-repeat;
+}
+#messageMain #userFrame .userList li aside {
+	width:195px;
+}
+#messageMain #userFrame .userList li aside h6 {
+	width:195px;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#929292;
+}
+#messageMain #userFrame .userList li aside p {
+	width:195px;
+	word-wrap:break-word;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#aaa;
+}
+#messageMain #userFrame .userList li.current {
+	position:relative;
+	background:#00aee7;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#00c0ff), to(#009bce));
+	background:-moz-linear-gradient(top, #00c0ff, #009bce);
+}
+#messageMain #userFrame .userList li.current aside,#messageMain #userFrame .userList li.current aside h6,#messageMain #userFrame .userList li.current aside p {
+	color:#fff;
+}
+#messageMain #userFrame .userList li span {
+	position:absolute; display:none;
+}
+#messageMain #userFrame .userList li span.ball {
+	width:10px; height:10px;
+	background:#5498cf;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6aabdf), to(#3b82bd));
+	background:-moz-linear-gradient(top, #6aabdf, #3b82bd);
+	border-radius:10px;
+}
+#messageMain #userFrame .userList li span.tips {
+	width:16px; height:16px;
+	background:#efefef;
+	text-align:center;
+	font:700 10px/16px Arial, Helvetica, sans-serif; color:#a6a6a6;
+	border-radius:2px;
+}
+#messageMain #userFrame .userList li.new {
+	position:relative;
+}
+#messageMain #userFrame .userList li.new span.ball {
+	display:block; left:8px; top:26px;
+}
+#messageMain #userFrame .userList li.new span.tips {
+	display:block; right:8px; top:33px;
+}
+
+/*	messageFrame
+-------------------------------------------------------------- */
+#messageMain #messageFrame {
+	width:540px;
+	background:#fff;
+	border-radius:5px 5px 0 0;
+}
+#messageMain #messageFrame header {
+	width:500px; height:20px;
+	padding:10px 10px 10px 30px;
+	border-bottom:1px solid #cbcbcb;
+}
+#messageMain #messageFrame header h3 {
+	width:400px; height:20px;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#929292;
+}
+#messageMain #messageFrame header span.deleteList {
+	display:inline-block;
+	width:20px; height:20px;
+	background:url(../images/messageDeleteListIcon.gif) no-repeat;
+	cursor:pointer;
+}
+
+#messageMain #messageFrame #sendMessageBox {
+	width:520px; height:29px;
+	padding:8px 10px;
+	border-bottom:1px solid #cbcbcb;
+}
+#messageMain #messageFrame #sendMessageBox .messageText {
+	width:440px; height:24px;
+	background:#fff;
+	text-indent:5px;
+	font:400 14px/18px Arial, Helvetica, sans-serif; color:#929292;
+	border:1px solid #b9b9b9; border-radius:5px;
+}
+#messageMain #messageFrame #sendMessageBox .messageBtn {
+	width:70px; height:26px;
+	background:#cdcdcd;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#cdcdcd));
+	background:-moz-linear-gradient(top, #fdfdfd, #cdcdcd);
+	font:400 14px/26px Arial, Helvetica, sans-serif; color:#929292;
+	border:1px solid #b9b9b9; border-radius:5px;
+	cursor:pointer;
+}
+
+#messageMain #messageFrame .messageList {
+	width:540px;
+}
+#messageMain #messageFrame .messageList li {
+	width:500px;
+	padding:12px 10px 12px 30px;
+	border-bottom:1px solid #cbcbcb;
+}
+#messageMain #messageFrame .messageList li .userPhoto {
+	width:33px; height:33px;
+	padding:2px 4px 4px 2px;
+	background:url(../images/profileFollowListPhotoBg.png) no-repeat;
+}
+#messageMain #messageFrame .messageList li aside {
+	width:300px;
+	margin-left:10px;
+}
+#messageMain #messageFrame .messageList li aside h6 {
+	width:300px;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#929292;
+}
+#messageMain #messageFrame .messageList li aside p {
+	width:300px;
+	word-wrap:break-word;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#aaa;
+}
+#messageMain #messageFrame .messageList li .publishTime {
+	width:120px; height:20px;
+	text-align:right;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#aaa;
+}
+#messageMain #messageFrame .messageList li .delete {
+	width:20px; height:20px;
+	background:url(../images/messageDeleteIcon.gif) no-repeat;
+	cursor:pointer;
+}
+
+/*messagePop
+-------------------------------------------------------------- */
+.messagePop {
+	position:absolute; display:none;
+	width:500px;
+	padding-bottom:5px;
+	background:#e7eaf1;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#f3f4f8), to(#e7eaf1));
+	background:-moz-linear-gradient(top, #f3f4f8, #e7eaf1);
+	border-radius:5px;
+}
+.messagePop header {
+	width:480px; height:38px;
+	border-bottom:1px solid #d8d8d8;
+}
+.messagePop header h3 {
+	width:165px; height:38px;
+	margin:0;
+	text-indent:4px;
+	font:700 18px/38px Arial, Helvetica, sans-serif; color:#595959;
+}
+.messagePop header span {
+	width:16px; height:16px;
+	margin:13px 7px 0 0;
+}
+.messagePop .messageTable {
+	width:480px;  min-height:38px; height:auto; _height:38px;
+	margin-top:5px;
+}
+.messagePop .messageTable dt {
+	width:65px;
+	margin:0; padding:0;
+	text-align:right; vertical-align:top;
+	font:400 14px/38px Arial, Helvetica, sans-serif; color:#6c6c6c;
+}
+.messagePop .messageTable dd {
+	text-align:right;
+	margin:0; padding:0;
+}
+.messagePop .messageTable dd.messageNameBox {
+	width:408px;  min-height:25px; height:auto; _height:25px;
+	margin-top:5px;
+	background:#fff;
+	border:1px solid #d8d8d8; border-radius:3px;
+}
+.messagePop .messageTable dd.messageNameBox .sendName {
+	width:408px;
+	margin:0; padding:0;
+}
+.messagePop .messageTable dd.messageNameBox .sendName li {
+	float:left; display:inline-block;
+	height:21px;
+	margin:2px 0 2px 2px; padding:0;
+}
+.messagePop .messageTable dd.messageNameBox .sendName li.name {
+	height:21px;
+	margin:2px 0 2px 2px; padding:0 5px;
+	background:#b6e4ff;
+	font:400 12px/21px Arial, Helvetica, sans-serif; color:#333;
+	border-radius:3px;
+}
+.messagePop .messageTable dd .messageName {
+	height:20px;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:none;
+}
+.messagePop .messageTable dd .messageContent {
+	width:408px; height:110px;
+	margin:0; padding:0;
+	font:400 12px/18px Arial, Helvetica, sans-serif;
+	border:1px solid #d8d8d8; border-radius:3px;
+}
+.messagePop .messageTable dd .messageSend {
+	width:70px; height:26px;
+	margin-top:5px;
+	background:#fdfdfd;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#dedede));
+	background:-moz-linear-gradient(top, #fdfdfd, #dedede);
+	border:1px solid #d6d6d6; border-radius:3px;
+}
+
+/*  NameList  */
+
+.messagePop .messageTable dd .nameList {
+	position:absolute; left:5px; top:30px;
+	width:408px; height:115px;
+	margin:0; padding:0;
+	overflow:auto;
+}
+.messagePop .messageTable dd .nameList li {
+	height:22px;
+	margin:0; padding:0;
+	background:#fff;
+	text-align:left; text-indent:5px;
+	font:400 12px/22px Arial, Helvetica, sans-serif; color:#999;
+	border:1px solid #ccc; border-top:none;
+	cursor:pointer;
+}
+.messagePop .messageTable dd .nameList li:hover {
+	background:blue; color:#fff;
+}
+.messagePop .messageTable dd .nameList li.selected {
+	background:blue; color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

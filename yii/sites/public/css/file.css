@@ -1,0 +1,1367 @@
+@charset "utf-8";
+
+/**
+* Description:file style 
+* Developers:xuchen
+**/
+
+/*File	Head
+-------------------------------------------------------------- */
+
+html {
+	overflow-y: scroll
+}
+
+#fileHead {
+	position: fixed;
+	left: 0;
+	top: 48px;
+	z-index: 20;
+	width: 100%;
+	height: 50px;
+	background: #d0d3d8;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#dcdde2), to(#c2c7cd));
+	background: -moz-linear-gradient(top, #dcdde2, #c2c7cd);
+	border-bottom: 1px solid #858c96;
+	box-shadow: 0 1px 1px #e5e6ea inset, 0 1px 1px #c9cdd0;
+}
+
+#fileHead #fileSearchFrame {
+	width: 238px;
+	height: 40px;
+	padding: 5px 0;
+	background: url(../images/messageIconBg.png) no-repeat 234px 10px;
+}
+
+#fileHead #fileSearchFrame .addFile {
+	width: 26px;
+	height: 26px;
+	margin: 7px 0 0 10px;
+	background: url(../images/fileIcon.png) no-repeat -137px 0 #e5e9eb;
+	background: url(../images/fileIcon.png) no-repeat -137px 0, -webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#cdd2d7));
+	background: url(../images/fileIcon.png) no-repeat -137px 0, -moz-linear-gradient(top, #fdfdfd, #cdd2d7);
+	border: 1px solid #8f96a0;
+	box-shadow: 0 0 2px #e8e9ea;
+	border-radius: 26px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+/*  file operations  */
+
+#fileHead #operationList {
+	float: left;
+	display: inline-block;
+	width: 370px;
+	height: 32px;
+	padding: 9px 0 9px 45px;
+}
+
+#fileHead #operationList li {
+	float: left;
+	display: inline-block;
+	width: 50px;
+	height: 32px;
+	margin-left: 10px;
+	background: url(../images/fileBtnIcon.png) no-repeat;
+}
+
+#fileHead #operationList li a {
+	display: block;
+	overflow: hidden;
+	width: 50px;
+	height: 32px;
+	text-indent: -999px;
+}
+
+#fileHead #operationList li.share {
+	background-position: 0 0;
+}
+#fileHead #operationList li.share:hover {
+	background-position: 0 -32px;
+}
+#fileHead #operationList li.share:active {
+	background-position: 0 -64px;
+}
+#fileHead #operationList li.shareDisabled {
+	background-position: 0 -96px;
+}
+#fileHead #operationList li.shareDisabled:hover {
+	background-position: 0 -96px;
+}
+#fileHead #operationList li.shareDisabled:active {
+	background-position: 0 -96px;
+}
+#fileHead #operationList li.download {
+	background-position: -50px 0;
+}
+#fileHead #operationList li.download:hover {
+	background-position: -50px -32px;
+}
+#fileHead #operationList li.download:active {
+	background-position: -50px -64px;
+}
+#fileHead #operationList li.downloadDisabled {
+	background-position: -50px -96px;
+}
+#fileHead #operationList li.downloadDisabled:hover {
+	background-position: -50px -96px;
+}
+#fileHead #operationList li.downloadDisabled:active {
+	background-position: -50px -96px;
+}
+#fileHead #operationList li.rename {
+	background-position: -100px 0;
+}
+#fileHead #operationList li.rename:hover {
+	background-position: -100px -32px;
+}
+#fileHead #operationList li.rename:active {
+	background-position: -100px -64px;
+}
+#fileHead #operationList li.renameDisabled {
+	background-position: -100px -96px;
+}
+#fileHead #operationList li.renameDisabled:hover {
+	background-position: -100px -96px;
+}
+#fileHead #operationList li.renameDisabled:active {
+	background-position: -100px -96px;
+}
+#fileHead #operationList li.delete {
+	background-position: -150px 0;
+}
+#fileHead #operationList li.delete:hover {
+	background-position: -150px -32px;
+}
+#fileHead #operationList li.delete:active {
+	background-position: -150px -64px;
+}
+#fileHead #operationList li.deleteDisabled {
+	background-position: -150px -96px;
+}
+#fileHead #operationList li.deleteDisabled:hover {
+	background-position: -150px -96px;
+}
+#fileHead #operationList li.deleteDisabled:active {
+	background-position: -150px -96px;
+}
+.allOperations li.rename {
+	display: block;
+}
+
+.lessOperations li.rename {
+	display: none;
+}
+
+#fileHead #fileIcon {
+	width: 92px;
+	height: 30px;
+	margin: 10px 15px 10px 0;
+}
+
+/*  fileUpload  */
+
+#fileHead #fileSearchFrame .addFile iframe {
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+}
+
+/*  file Search  */
+
+#fileHead #fileSearchFrame .SearchBox {
+	width: 178px;
+	height: 26px;
+	margin: 7px 0 0 8px;
+	background: #fff;
+	border: 1px solid #a9b0b7;
+	box-shadow: 1px 1px 1px #cbd1d7 inset, -1px 1px 1px #dadde1;
+	border-radius: 13px;
+}
+
+#fileHead #fileSearchFrame .SearchBox .SearchText {
+	width: 133px;
+	height: 20px;
+	margin: 3px 0 0 10px;
+	background: transparent;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	border: none;
+}
+
+#fileHead #fileSearchFrame .SearchBox .SearchBtn {
+	width: 26px;
+	height: 26px;
+	margin-right: 5px;
+	background: url(../images/messageIconBg.png) no-repeat -4px -26px;
+	border: none;
+}
+
+/*	fileUserList
+-------------------------------------------------------------- */
+
+#fileUserList {
+	position: fixed;
+	left: 0;
+	top: 99px;
+	width: 235px;
+	background: #eef2f5;
+	border-right: 1px solid #a6adb7;
+	box-shadow: 1px 0px 1px #ccd0d6;
+}
+
+#fileUserList #userListOwn {
+	width: 100%;
+	overflow: auto;
+}
+
+#fileUserList #userListOwn li {
+	position: relative;
+	width: 100%;
+	margin-top: 1px;
+	padding: 10px 0 12px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #dcd7d4;
+	box-shadow: 0 1px 1px #fcfcfc;
+	cursor: pointer;
+}
+
+#fileUserList #userListOwn li:hover,#fileUserList #userListOwn li.selected {
+	background: #53aeef;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background: -moz-linear-gradient(top, #6fbff2, #369dec);
+	border-top: 1px solid #1688de;
+	border-bottom: 1px solid #1688de;
+	box-shadow: inset 0 0 1px #6fbff2, 0 0 1px #caedee;
+}
+
+#fileUserList #userListOwn li:hover aside h6,#fileUserList #userListOwn li.selected aside h6 {
+	text-shadow: none;
+	color: #fff;
+}
+
+#fileUserList #userListOwn li#friendsShared {
+	width: 100%;
+	margin-top: -1px;
+	padding: 9px 0;
+	background: #e3e8ec;
+	text-indent: 12px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 14px/12px Arial, Helvetica, sans-serif;
+	color: #666;
+	border-top: 1px solid #b3bac4;
+	border-bottom: 1px solid #b3bac4;
+	box-shadow: 0 -1px 1px #d8dfe3 inset;
+	cursor: pointer;
+}
+
+#fileUserList #userListOwn li .userPhoto {
+	width: 34px;
+	height: 34px;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+
+#fileUserList #userListOwn li aside {
+	margin-left: 10px;
+	width: 140px;
+}
+
+#fileUserList #userListOwn li aside h6 {
+	width: 140px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 14px/18px Helvetica, Arial, sans-serife;
+	color: #999;
+}
+
+#fileUserList #userListOwn li.own aside h6 {
+	font: 700 14px/34px Helvetica,  Arial, sans-serif;
+}
+
+#fileUserList #userListOwn li span {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 22px;
+	min-width: 15px;
+	height: 18px;
+	padding: 0 5px;
+	background: #d5dbdf;
+	text-align: center;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	color: #999;
+	border-radius: 12px;
+}
+
+#fileUserList #userListOwn li.own span.tips {
+	background: #4ba9ed;
+	color: #fff;
+}
+
+#fileUserList #userListOwn li:hover span.tips,#fileUserList #userListOwn li.selected span.tips {
+	background: #fff;
+	color: #379deb;
+}
+
+/*  friends List  */
+
+#fileUserList .userList {
+	width: 100%;
+	overflow: auto;
+}
+
+#fileUserList .userList li {
+	position: relative;
+	width: 100%;
+	margin-top: 1px;
+	padding: 10px 0 12px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #dcd7d4;
+	box-shadow: 0 1px 1px #fcfcfc;
+	cursor: pointer;
+}
+
+#fileUserList .userList li:hover,#fileUserList .userList li.selected {
+	background: #53aeef;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6fbff2), to(#369dec));
+	background: -moz-linear-gradient(top, #6fbff2, #369dec);
+	border-top: 1px solid #1688de;
+	border-bottom: 1px solid #1688de;
+	box-shadow: inset 0 0 1px #6fbff2, 0 0 1px #caedee;
+}
+
+#fileUserList .userList li:hover aside h6,#fileUserList .userList li:hover aside p,#fileUserList .userList li.selected aside h6,#fileUserList .userList li.selected aside p {
+	text-shadow: none;
+	color: #fff;
+}
+
+#fileUserList .userList li .userPhoto {
+	width: 34px;
+	height: 34px;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+
+#fileUserList .userList li aside {
+	margin-left: 10px;
+	width: 140px;
+}
+
+#fileUserList .userList li aside h6 {
+	width: 140px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 14px/34px Arial, Helvetica, sans-serife;
+	color: #666;
+}
+
+#fileUserList .userList li aside p {
+	width: 140px;
+	word-wrap: break-word;
+	font: 400 12px/20px Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+#fileUserList .userList li span {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 22px;
+	min-width: 15px;
+	height: 18px;
+	padding: 0 5px;
+	background: #d5dbdf;
+	text-align: center;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	color: #999;
+	border-radius: 12px;
+}
+
+#fileUserList .userList li:hover span.tips,#fileUserList .userList li.selected span.tips {
+	background: #fff;
+	color: #379deb;
+}
+
+/*File	main
+-------------------------------------------------------------- */
+
+#fileMain {
+	position: relative;
+	margin: 100px 0 0 235px;
+}
+
+#fileMain  #uploadFileTable {
+	width: 90%;
+	height: 100px;
+	margin-top: 20px;
+	background: #fff;
+	border: 5px solid #ccc;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#fileMain  #uploadFileTable iframe {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	background: #fff;
+	border: none;
+}
+
+#fileMask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+
+.loadingFiles {
+	width: 100%;
+	height: 100%;
+	background: url(../images/ajax-loader.gif) no-repeat center;
+}
+
+.fileList {
+	float: left;
+	width: 100%;
+}
+
+.fileList li {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 117px;
+	height: 140px;
+	margin: 10px 0px 0 20px;
+	padding: 10px 10px 0;
+}
+
+.fileList li section {
+	position: relative;
+	width: 117px;
+	height: 110px;
+	background: url(../images/fileIcon.png) no-repeat 0 -696px;
+	
+}
+
+.fileList li section span {
+	position: absolute;
+	display: none;
+	left: 20px;
+	bottom: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+.fileList li.share section span {
+	display: block;
+}
+
+/*  folder  */
+
+.fileList li.folder section {
+	background: url(../images/fileIcon.png) no-repeat 0 top;
+}
+
+.fileList li.folder section span {
+	left: 5px;
+}
+
+/*  file selected  */
+.fileList li.selected {
+	background: url(../images/fileSelectBg.png) repeat;
+	border-radius: 5px;
+}
+/*  file  */
+.fileList li.file section {
+	background: url(../images/fileIcon.png) no-repeat 0 -696px;
+}
+/*  zip  */
+.fileList li.zip section {
+	background: url(../images/fileIcon.png) no-repeat 0 -220px;
+}
+/*  rar  */
+.fileList li.rar section {
+	background: url(../images/fileIcon.png) no-repeat 0 -366px;
+}
+/*  image  */
+.fileList li.image section {
+	background: url(../images/fileIcon.png) no-repeat 0 -476px;
+}
+/*  video  */
+.fileList li.video section {
+	background: url(../images/fileIcon.png) no-repeat 0 -586px;
+}
+/*  audio  */
+.fileList li.audio section {
+	background: url(../images/fileIcon.png) no-repeat 0 -1246px;
+}
+/*  doc  */
+.fileList li.doc section {
+	background: url(../images/fileIcon.png) no-repeat 0 -806px;
+}
+/*  xls  */
+.fileList li.xls section {
+	background: url(../images/fileIcon.png) no-repeat 0 -916px;
+}
+/*  ppt  */
+.fileList li.ppt section {
+	background: url(../images/fileIcon.png) no-repeat 0 -1026px;
+}
+/*  pdf  */
+.fileList li.pdf section {
+	background: url(../images/fileIcon.png) no-repeat 0 -1136px;
+}
+
+/*  folderDash  */
+.fileList li.folderDash section {
+	background: url(../images/fileIcon.png) no-repeat 0 top;
+	opacity: 0.8;
+}
+
+/*  share  */
+
+.folderTitle {
+	width: 100%;
+	height: 20px;
+	padding: 5px 0;
+	text-indent: 20px;
+	text-shadow: 1px 1px 1px #eee;
+	font: 700 14px/20px Helvetica, Arial,  sans-serif;
+	color: #656565;
+}
+
+.folderTitle span.share {
+	margin-left: 30px;
+	text-shadow: 1px 1px 1px #eee;
+	font: 400 14px/20px Arial, Helvetica, sans-serif;
+	color: #000;
+	cursor: pointer;
+}
+
+/*  moveBlock  */
+
+.fileList li.moveBlock {
+	position: absolute;
+}
+
+.fileList li aside {
+	position: relative;
+	width: 117px;
+	height: 52px;
+}
+
+.fileList li aside label.fileNameInfo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 117px;
+	height: 30px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #eff0f4;
+	font: 700 14px/30px Helvetica, Arial, sans-serif;
+	color: #666;
+	display: block;
+	cursor: pointer;
+}
+
+.fileList li aside input.fileNameText {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 117px;
+	height: 28px;
+	background: #fff;
+	text-align: center;
+	font: 400 14px/28px Helvetica, Arial, sans-serif;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: none;
+}
+
+.fileList li aside div.fileDate {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	width: 117px;
+	height: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	font: 400 12px/20px Arial, Helvetica, sans-serif;
+	color: #656565;
+}
+
+/*  bar  */
+
+.fileList li .bar {
+	position: absolute;
+	left: 0px;
+	top: 75px;
+	width: 100px;
+	height: 12px;
+	background: #d3d5d7;
+	border: 1px solid #206da5;
+	border-radius: 12px;
+}
+
+.fileList li .bar span.inline {
+	display: block;
+	width: 1px;
+	height: 12px;
+	background: url(../images/fileBarBg.png) repeat-x;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.fileList li a.cancel {
+	position: absolute;
+	right: 0;
+	top: 75px;
+	display: block;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	background: url(../images/Close.gif) no-repeat center;
+	text-indent: -999px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+/*  folderBox  */
+
+.fileList li.folderBox {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: 360px;
+	max-height: 460px;
+	margin: 20px 0 0 0;
+	padding: 0 0 20px;
+}
+
+.fileList li.folderBox0:before {
+	content: '';
+	position: absolute;
+	z-index: 15;
+	left: 49px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox1:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 206px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox2:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 363px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox3:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 520px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox4:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 677px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox5:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 834px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox6:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 991px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox7:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 1148px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox8:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 1305px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox9:before {
+	content: '';
+	position: absolute;
+	z-index: 11;
+	left: 1462px;
+	top: -17px;
+	width: 63px;
+	height: 33px;
+	background: url(../images/FolderTriangle.png) no-repeat;
+}
+
+.fileList li.folderBox .fileSubList {
+	float: left;
+	width: 100%;
+	height: 320px;
+	background: url(../images/FolderBg.png) repeat;
+	box-shadow: 0px 1px 6px #666 inset;
+	padding: 20px 0;
+	overflow: auto;
+}
+
+.fileList li.folderBox li {
+	margin: 10px 20px 0;
+}
+
+.uploadDocument {
+	position: absolute;
+	display: none;
+	width: 460px;
+	padding: 20px;
+	background: #e7eaf1;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f4f8), to(#e7eaf1));
+	background: -moz-linear-gradient(top, #f3f4f8, #e7eaf1);
+	border-radius: 5px;
+}
+
+.uploadDocument header {
+	width: 460px;
+	height: 25px;
+	padding-bottom: 28px;
+	font: 400 20px/28px Arial, Helvetica, sans-serif;
+}
+
+.uploadDocument iframe {
+	width: 460px;
+	border: none;
+}
+
+.uploadDocument section {
+	width: 460px;
+}
+
+.uploadDocument section .fileTypeIcon {
+	float: left;
+	display: inline-block;
+	width: 80px;
+	height: 85px;
+}
+
+.uploadDocument section .fileTypeIcon div {
+	float: left;
+	display: inline-block;
+	width: 65px;
+	height: 80px;
+	box-shadow: 2px 2px 8px #c1c2c5;
+}
+
+.uploadDocument section .fileTypeIcon div.fileCommon {
+	background: #ffffff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dbdbdb));
+	background: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+}
+
+.uploadDocument section aside {
+	float: left;
+	display: inline-block;
+	width: 375px;
+	height: 85px;
+}
+
+.uploadDocument section aside h6 {
+	width: 375px;
+	height: 24px;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font: 400 16px/24px Arial, Helvetica, sans-serif;
+}
+
+.uploadDocument section #CloseUploadDocument {
+	width: 70px;
+	height: 25px;
+	padding: 0;
+	margin: 25px 0 0 380px;
+	background: #dedede;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#dedede));
+	background: -moz-linear-gradient(top, #fdfdfd, #dedede);
+	text-align: center;
+	font: 400 14px/25px Arial, Helvetica, sans-serif;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.uploadDocument section aside div.uploadifyProgress {
+	float: left;
+	width: 300px;
+	height: 10px;
+	background: #ffffff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eaeaea));
+	background: -moz-linear-gradient(top, #ffffff, #eaeaea);
+	border: 1px solid #c4c4c4;
+	border-radius: 10px;
+}
+
+.uploadDocument section aside div.uploadifyProgress span.uploadifyProgressBar {
+	display: inline-block;
+	float: left;
+	width: 0;
+	height: 10px;
+	border-radius: 10px;
+}
+
+.blue span {
+	background-color: #34c2e3;
+}
+
+.stripes span {
+	-webkit-background-size: 30px 30px;
+	-moz-background-size: 30px 30px;
+	background-size: 30px 30px;
+	background-image: -webkit-gradient(linear, left top, right bottom,
+						color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+						color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+						color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+						to(transparent));
+	background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+						transparent 75%, transparent);
+	-webkit-animation: animate-stripes 3s linear infinite;
+	-moz-animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+	0% {background-position: 0 0;
+}
+
+100% {
+	background-position: 60px 0;
+}
+
+}
+
+
+@-moz-keyframes animate-stripes {
+	0% {background-position: 0 0;
+}
+
+100% {
+	background-position: 60px 0;
+}
+
+}
+.uploadDocument section aside div.fileUploadCancel {
+	float: right;
+}
+
+.uploadDocument section aside p.fileUploadInfo {
+	width: 375px;
+	height: 18px;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	color: #818181;
+}
+
+/*  fileInformation  */
+
+#fileInformation {
+	position:fixed;
+	display: none;
+	width: 875px;
+	padding: 10px 20px;
+	background: #f3f3f5;
+	border: 1px solid #959ba5;
+	border-radius: 10px;
+}
+
+#fileInformation span#closeFileInformation {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url(../images/fileIcon.png) no-repeat -163px -4px;
+	cursor: pointer;
+}
+
+#fileInformation header {
+	width: 416px;
+	padding: 2px 0;
+}
+
+#fileInformation header h3 {
+	width: 416px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff; word-wrap: break-word;
+	font: 700 14px/22px Helvetica Neue;
+	color: #666;
+}
+
+#fileInformation header p {
+	width: 416px;
+	height: 18px;
+	padding-top: 3px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	font: 400 14px/18px Helvetica Neue;
+	color: #999;
+}
+
+#fileInformation .fileShow {
+	width: 416px;
+}
+
+#fileInformation .fileShow .zip {
+	width: 214px;
+	height: 168px;
+	margin: 30px auto;
+	background: url(../images/fileIcon.png) no-repeat -137px -26px;
+}
+
+#fileInformation .fileShow .file {
+	width: 132px;
+	height: 156px;
+	margin: 30px auto;
+	background: url(../images/fileIcon.png) no-repeat -137px -194px;
+}
+
+#fileInformation .fileOperations {
+	width: 416px;
+}
+
+#fileInformation .fileOperations div {
+	cursor: pointer;
+}
+
+#fileInformation .fileOperations .deleteFile {
+	width: 70px;
+	height: 18px;
+	background: url(../images/fileOperation.png) no-repeat -261px 0;
+}
+
+#fileInformation .fileOperations .downloadFile {
+	width: 90px;
+	height: 40px;
+}
+
+#fileInformation .fileOperations .shareFile {
+	width: 60px;
+	height: 40px;
+	background: url(../images/fileOperation.png) no-repeat -98px 0;
+}
+
+#fileInformation .fileOperations a {
+	display: block;
+	width: 90px;
+	height: 20px;
+	background: url(../images/fileOperation.png) no-repeat -176px 0;
+}
+
+#fileInformation .fileOperations p {
+	width: 90px;
+	height: 18px;
+	text-align: center;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	color: #858b95;
+}
+
+#fileInformation .fileSareFrame {
+	width: 416px;
+	border-top: 1px dashed #b2b9bd;
+}
+
+#fileInformation .fileSareFrame header {
+	width: 416px;
+	height: 32px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 12px/32px Arial, Helvetica, sans-serif;
+	color: #858c96;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList {
+	width: 416px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li {
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin: 4px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.name img {
+	width: 34px;
+	height: 34px;
+	border-radius: 3px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.name a.deleteName {
+	display: none;
+	position: absolute;
+	left: -9px;
+	top: -9px;
+	width: 17px;
+	height: 18px;
+	background: url(../images/fileIcon.png) no-repeat -173px -4px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.name:hover a.deleteName {
+	display: block;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare {
+	background: url(../images/fileIcon.png) no-repeat -68px -330px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock {
+	position: absolute;
+	left: 0;
+	top: 36px;
+	display: none;
+	width: 215px;
+	background: #f4f4f5;
+	border: 1px solid #959ba5;
+	border-radius: 5px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .addPeopleShow {
+	width: 215px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .addPeopleShow li.textLi {
+	width: 195px;
+	height: 28px;
+	margin: 10px;
+	border: 1px solid #a1a8af;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #ddd inset;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .addPeopleShow li.textLi .addPeopleText {
+	width: 185px;
+	height: 18px;
+	margin: 5px;
+	background: transparent;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	border: none;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList {
+	display: none;
+	width: 215px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList li {
+	width: 199px;
+	height: 34px;
+	padding: 8px;
+	margin: 0;
+	border-top: 1px solid #959ba5;
+	cursor: pointer;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList li:hover,#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList li.selected {
+	background: #dbe0e6;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList li .userPhoto {
+	width: 34px;
+	height: 34px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+#fileInformation .fileSareFrame .sharePeopleList li.addShare .addPeopleBlock .completionUserList .userName {
+	height: 34px;
+	text-indent: 12px;
+	font: 700 12px/34px Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+#fileInformation .comments {
+	width: 425px;
+	padding-top: 10px;
+}
+
+#fileInformation .comments header {
+	width: 425px;
+	height: 20px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 14px/20px Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+#fileInformation .comments .commentsList {
+	width: 425px;
+	height: 325px;
+	overflow: auto;
+}
+
+#fileInformation .comments .commentsList li {
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+}
+
+#fileInformation .comments .commentsList li span.time {
+	position: absolute;
+	display: block;
+	top: 10px;
+	right: 10px;
+	font: 400 12px/14px Arial, Helvetica, sans-serife;
+	color: #ccc;
+}
+
+#fileInformation .comments .commentsList li .userPhoto {
+	width: 24px;
+	height: 24px;
+	border-radius: 3px;
+}
+
+#fileInformation .comments .commentsList li aside {
+	width: 370px;
+	padding-left: 10px;
+}
+
+#fileInformation .comments .commentsList li aside h6 {
+	width: 370px;
+	text-shadow: 1px 1px 1px #fff;
+	font: 700 12px/18px Arial, Helvetica, sans-serife;
+	color: #666;
+}
+
+#fileInformation .comments .commentsList li aside p {
+	width: 370px;
+	word-wrap: break-word;
+	font: 400 12px/20px Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+#fileInformation .comments .sendBox {
+	width: 425px;
+	height: 50px;
+}
+
+#fileInformation .comments .sendBox .userPhoto {
+	width: 24px;
+	height: 24px;
+	margin-top: 13px;
+	border-radius: 3px;
+}
+
+#fileInformation .comments .sendBox .sendText {
+	width: 305px;
+	height: 18px;
+	margin: 10px 0 0 10px;
+	padding: 5px;
+	background: #f6f8fa;
+	border: 1px solid #b1b8c2;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #e9ecef inset, 1px 1px 1px #f9fafc;
+}
+
+#fileInformation .comments .sendBox .sendBtn {
+	width: 66px;
+	height: 30px;
+	margin: 10px 0 0 0;
+	background: url(../images/newsfeedIconBg.png) no-repeat 0 -110px;
+	border: 0;
+	cursor: pointer;
+}
+
+/*  shareBox  */
+
+.shareBox {
+	
+}
+
+.shareBox .addPeopleBlock {
+	width: 500px;
+	padding: 10px 0;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow {
+	width: 500px;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li {
+	float: left;
+	margin: 2px 0 2px 5px;
+	padding: 0 0 0 2px;
+	display: inline-block;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li.textLi {
+	position:relative;
+	width: 165px;
+	height: 18px;
+	padding: 7px 5px 7px 20px;
+	background: url(../images/fileIcon.png) no-repeat -334px 8px #fff;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #eee inset;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li.name {
+	position: relative;
+	width: 34px;
+	height: 34px;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li.name img {
+	width: 34px;
+	height: 34px;
+	border-radius: 5px;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li.name a.deleteName {
+	display: none;
+	position: absolute;
+	left: -9px;
+	top: -9px;
+	width: 17px;
+	height: 18px;
+	background: url(../images/fileIcon.png) no-repeat -173px -4px;
+}
+
+.shareBox .addPeopleBlock .addPeopleShow li.name:hover a.deleteName {
+	display: block;
+}
+
+.shareBox .addPeopleText {
+	width: 165px;
+	height: 18px;
+	background: #fff;
+	font: 400 12px/18px Arial, Helvetica, sans-serif;
+	border: none;
+}
+
+.shareBox .addPeopleBtn {
+	width: 64px;
+	height: 30px;
+	background: url(../images/fileIcon.png) no-repeat 0 -330px;
+	border: none;
+	cursor: pointer;
+}
+
+.shareBox .addPeopleBlock .completionUserList {
+	position: absolute; top:32px; left:0;
+	display: none;
+	width: 215px;
+	background: #f4f5f6;
+	border: 1px solid #959ba5;
+	border-bottom: none;
+	border-radius: 5px;
+}
+
+.shareBox .addPeopleBlock .completionUserList li {
+	width: 100%;
+	height: 34px;
+	padding: 8px 0; margin:0;
+	border-bottom: 1px solid #959ba5;
+	cursor: pointer;
+}
+.shareBox .addPeopleBlock .completionUserList li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+.shareBox .addPeopleBlock .completionUserList li:hover,.shareBox .addPeopleBlock .completionUserList li.selected {
+	background: #dbe0e6;
+}
+
+.shareBox .addPeopleBlock .completionUserList li .userPhoto {
+	width: 34px;
+	height: 34px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.shareBox .addPeopleBlock .completionUserList .userName {
+	height: 34px;
+	text-indent: 12px;
+	font: 700 12px/34px Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 170px;
+	overflow: hidden;
+}
+
+#fileMask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+
+

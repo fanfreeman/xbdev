@@ -1,0 +1,384 @@
+@charset "utf-8";
+/**
+* Description:Newsfeed style 
+* Developers:xuchen
+**/
+
+body {
+	background:url(../images/newsFeedBodyBg.jpg) repeat fixed;
+}
+/*Newsfeed
+-------------------------------------------------------------- */
+
+.newsfeed {
+	padding:8px;
+	width:527px;
+	background:url(../images/NewsfeedListBg.png) repeat-y;
+	margin:65px 0 10px 41px;
+	position:relative;
+}
+.newsfeed .bottom{
+	width:543px;
+	height:12px;
+	position:absolute;
+	bottom:-12px;
+	left:0;
+}
+.newsfeed header {
+	border-bottom:1px solid #b1b1b1
+}
+.newsfeed header .addNewsfeed {
+	width:22px;
+	height:25px;
+	margin:2px 0 0 8px;
+	cursor:pointer;
+}
+.newsfeed .categoryList {
+	height:34px;
+	padding-right:24px;
+	background:url(../images/Down.gif) no-repeat right;
+	font:700 15px/34px Helvetica Neue;
+	color:#979797;
+	position:relative;
+	cursor:pointer;
+}
+.newsfeed .categoryList:hover {
+	color:#00396f;
+}
+.newsfeed .categoryList .category {
+	padding:0;
+	background:#fff;
+	border:1px solid #ccc;
+	border-top:none;
+	border-bottom:none;
+	position:absolute;
+	top:35px;
+	right:0;
+	display:none;
+}
+.newsfeed .categoryList .category li {
+	width:100px;
+	height:25px;
+	padding-left:40px;
+	font:400 15px/25px Helvetica Neue;
+	border-bottom:1px solid #ccc;
+}
+.newsfeed .categoryList .category li:hover {
+	background:#ccc;
+	color:#fff;
+}
+.newsfeed .categoryHover {
+	background:url(../images/Down.gif) no-repeat right;
+}
+
+/*Publish News
+-------------------------------------------------------------- */
+
+.publishBox {
+	width:473px;
+	height:76px;
+	padding:14px 22px 10px 27px;
+	display:none;
+}
+.publishBox .user_photo {
+	width:50px;
+	height:50px;
+	margin-right:15px;
+	border:2px solid #fff;
+	box-shadow:0px 2px 2px 0px #666;
+}
+.publishBox div.InputNormarl {
+	float:left;
+	width:400px;
+	height:30px;
+	background:#f5fafd;
+	border-radius:5px;
+	position:relative;
+	border:1px solid #ddd;
+	box-shadow:inset 1px 1px 1px #c1c1c1;
+	margin:3px 0 7px;
+}
+.publishBox div.InputFocus {
+	float:left;
+	width:400px;
+	height:30px;
+	background:#f5fafd;
+	border-radius:5px;
+	position:relative;
+	border:1px solid #c1c1c1;
+	box-shadow:inset 1px 1px 1px #c1c1c1, 0px 0px 2px #ccc;
+	margin:3px 0 7px;
+}
+.publishBox div.Inputblur {
+	border:1px solid #3e607b;
+	box-shadow:inset 2px 2px 6px #919598, 0px 0px 2px red;
+}
+.publishBox div label.publishInfo {
+	width:400px;
+	height:30px;
+	text-indent:5px;
+	font:100 15px/34px Arial;
+	color:#ccc;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.publishBox div .publishText {
+	width:400px;
+	height:30px;
+	background:transparent;
+	text-indent:5px;
+	font:100 15px/34px Arial;
+	border:0;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.publishBox .addFile{
+	width:100px;
+	height:26px;
+	font:700 15px/26px Helvetica Neue;
+	color:#a0a0a0;
+	cursor:pointer;
+}
+.publishBox .btn {
+	width:72px;
+	padding:5px 0;
+	color:#6d6d6d;
+	cursor:pointer;
+	font-size:14px;
+	border:1px solid #d6d6d6;
+	border-radius:5px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#dedede));
+	background:-moz-linear-gradient(top, #fdfdfd, #dedede);
+}
+.publishBox .btn:hover {
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#dedede), to(#fdfdfd));
+	background:-moz-linear-gradient(top, #dedede, #fdfdfd);
+}
+
+/*Newsfeed list
+-------------------------------------------------------------- */
+
+.newsfeed_list {
+	width:522px;
+	padding:0;
+	margin-top:7px;
+}
+.newsfeed_list li {
+	width:473px;
+	height:76px;
+	padding:14px 22px 0 27px;
+	border-bottom:1px solid #eeeeee
+}
+.newsfeed_list li .user_photo {
+	width:50px;
+	height:50px;
+	margin-right:14px;
+	border:2px solid #fff;
+	box-shadow:0px 2px 2px 0px #666;
+}
+.newsfeed_list li h2 {
+	color:#333333;
+	font:700 15px/18px Helvetica Neue;
+	margin:0;
+}
+.newsfeed_list li h2 a {
+	color:#333333;
+}
+.newsfeed_list li p {
+	color:#333333;
+	font:400 15px/22px Arial, Helvetica, sans-serif;
+	margin:0;
+}
+.newsfeed_list li a {
+	color:#317ea8
+}
+.newsfeed_list li .detail {
+	height:20px;
+	color:#999999;
+	font:400 11px/20px Helvetica Neue;
+}
+.newsfeed_list li .detail li {
+	width:auto;
+	height:20px;
+	padding:0;
+	border:none;
+}
+.newsfeed_list li .detail .time {
+	padding-right:10px;
+}
+.newsfeed_list li .detail .liked {
+	width:40px;
+	background:url(../images/Liked.png) no-repeat left;
+	text-indent:19px;
+	cursor:pointer;
+}
+.newsfeed_list li .detail .notLiked {
+	width:40px;
+	background:url(../images/LikedOff.png) no-repeat left;
+	text-indent:19px;
+	cursor:pointer;
+}
+.newsfeed_list li .detail .reply {
+	width:40px;
+	background:url(../images/Reply.png) no-repeat left;
+	text-indent:19px;
+}
+.newsfeed_list .current {
+	background:#e7e7e7;
+	position:relative;
+}
+.newsfeed_list .current .icon {
+	width:6px;
+	height:12px;
+	background:url(../images/icon01.png) -22px -27px;
+	position:absolute;
+	top:37px;
+	right:30px;
+}
+
+/*Feed reply
+-------------------------------------------------------------- */
+
+.feed_reply {
+	position:fixed;
+	left:610px;
+	top:73px;
+	width:455px;
+	padding:14px 17px 32px 31px;
+	background:url(../images/NewsfeedReplyBg.png) repeat-y;
+}
+.feed_reply_bottom {
+	position:absolute;
+	left:0px;
+	bottom:-10px;
+}
+.feed_reply header {
+	height:53px;
+}
+.feed_reply header .user_photo {
+	float:left;
+	margin-right:12px;
+	width:35px;
+	height:35px;
+	border:1px solid #d9d9d9;
+	box-shadow:0px 2px 2px 0px #666;
+}
+.feed_reply header .user_name {
+	color:#423c32;
+	font:400 16px/40px Helvetica Neue
+}
+.feed_reply .close {
+	width:9px;
+	height:9px;
+	text-indent:9999px;
+	overflow:hidden;
+	background:url(../images/icon01.png) -42px -27px;
+	cursor:pointer;
+}
+#feed_reply_scroll {
+	overflow-y:auto;
+}
+.feed_reply_con {
+	width:428px;
+	font:400 15px/21px Helvetica Neue;
+	color:#423c32;
+	padding:15px 0;
+	border-top:1px solid #ccc;
+}
+.feed_reply .detail {
+	width:428px;
+	padding:0;
+	height:20px;
+	font:400 11px/20px Helvetica Neue;
+	margin:0;
+}
+.feed_reply .detail li {
+	width:auto;
+	height:20px;
+	padding:0;
+	border:none;
+}
+.feed_reply .detail .time {
+	color:#999999;
+	padding-right:10px;
+}
+.feed_reply .detail .liked {
+	width:40px;
+	background:url(../images/Liked.png) no-repeat left;
+	text-indent:19px;
+	cursor:pointer;
+}
+.feed_reply .detail .notLiked {
+	width:40px;
+	background:url(../images/LikedOff.png) no-repeat left;
+	text-indent:19px;
+	cursor:pointer;
+}
+.feed_reply .detail .reply {
+	width:40px;
+	background:url(../images/Reply.png) no-repeat left;
+	text-indent:19px;
+}
+.feed_reply_list {
+	width:428px;
+	padding:0;
+	margin:7px 0 30px;
+}
+.feed_reply_list li {
+	width:408px;
+	padding:15px 0 8px;
+	border-top:1px solid #ccc;
+}
+.feed_reply_list li .user_photo {
+	width:30px;
+	height:30px;
+	border:2px solid #fff;
+	box-shadow:0px 2px 2px 0px #666;
+}
+.feed_reply_list li h2 {
+	width:368px;
+	height:18px;
+	color:#333333;
+	font:700 15px/18px Helvetica Neue;
+	margin:0;
+}
+.feed_reply_list li h2 a {
+	color:#333333;
+}
+.feed_reply_list li p {
+	width:368px;
+	color:#333333;
+	font:400 15px/22px Arial, Helvetica, sans-serif;
+	margin:0;
+}
+.feed_reply_list li p.time {
+	font:400 12px/22px Arial, Helvetica, sans-serif;
+	color:#999;
+}
+.feed_reply textarea {
+	width:410px;
+	height:70px;
+	padding:5px;
+	border-radius:6px;
+	border:2px solid #cccccc;
+	clear:both;
+}
+.feed_reply .btn {
+	width:72px;
+	padding:5px 0;
+	color:#6d6d6d;
+	cursor:pointer;
+	font-size:14px;
+	border:1px solid #d6d6d6;
+	border-radius:5px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#fdfdfd), to(#dedede));
+	background:-moz-linear-gradient(top, #fdfdfd, #dedede);
+	margin:10px 0 5px 352px;
+}
+.feed_reply .btn:hover {
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#dedede), to(#fdfdfd));
+	background:-moz-linear-gradient(top, #dedede, #fdfdfd);
+}
+

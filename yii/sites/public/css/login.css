@@ -1,0 +1,314 @@
+@charset "utf-8";
+/**
+* Description:login style 
+* Developers:xuchen
+**/
+
+
+#CloudLogo { position:fixed; top:35px; left:27px;}
+#allLogo { position:fixed; bottom:20px; width:100%; text-align:center;}
+/* login
+-------------------------------------------------------------- */
+
+#loginMain {
+	position:fixed; top:200px; display:none;
+	width:350px;
+	padding-bottom:15px;
+	background:#f2f4f6;
+	border-radius:4px;
+	box-shadow:0px -1px 1px #fcfcfc inset, 0px 1px 10px #a8a9ac;
+}
+#loginMain header {
+	width:97%; height:45px;
+	background:url(../images/loginIcon.png) repeat-x 0 43px;
+	text-align:center; text-shadow:1px 1px 1px #fff;
+	font:700 16px/45px Arial, Helvetica, sans-serif; color:#6e747f;
+}
+#loginMain .betaIcon {
+	position:absolute; top:-7px; right:-6px;
+	width:61px; height:60px;
+	background:url(../images/LoginBeta.png) no-repeat;
+}
+#loginMain .loginText {
+	position:relative;
+	width:230px; height:20px;
+	padding:8px 0 8px 40px; margin-top:22px;
+	border-top:1px solid #c5c7cc; border-bottom:1px solid #fff; border-radius:4px;
+	box-shadow:0 1px 3px #d0d3d7 inset;
+}
+#loginMain .userName {
+	background: url(../images/loginIcon.png) no-repeat -97px -4px #dcdee2;
+}
+#loginMain .userPassword {
+	background: url(../images/loginIcon.png) no-repeat -97px -44px #dcdee2;
+}
+#loginMain .loginText input {
+	width:190px; height:20px;
+	background:transparent;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#848485;
+	border:none;
+}
+#loginMain .userName input {
+	width:220px;
+}
+#loginMain .loginText input.loginBtn {
+	position:absolute; right:3px; top:0;
+	width:36px; height:36px;
+	background:url(../images/loginIcon.png) no-repeat -95px -84px;
+	border:none;
+	cursor:pointer;
+}
+#loginMain .forget {
+	width:270px; height:20px;
+	margin-top:10px;
+	text-align:right; text-shadow:1px 1px 1px #fff;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#bfc2c5;
+}
+#loginMain .forget a {
+	text-decoration:none;
+	color:#bfc2c5;
+}
+
+/* forgot password
+-------------------------------------------------------------- */
+
+#loginMain .userMail {
+	background: url(../images/loginIcon.png) no-repeat -97px -122px #dcdee2;
+}
+#loginMain .sendrMail {
+	width:68px; height:31px;
+	margin:15px 0 0 242px;
+	background: url(../images/loginIcon.png) no-repeat -25px -11px;
+	border:none;
+	cursor:pointer;
+}
+#loginMain .signUp {
+	width:93px; height:31px;
+	margin:15px 0 0 217px;
+	background: url(../images/loginIcon.png) no-repeat 0 -51px;
+	border:none;
+	cursor:pointer;
+}
+
+/* Download Browser
+-------------------------------------------------------------- */
+
+#loginMain .browserTips {
+	width:350px;
+	text-align:center; text-shadow:1px 1px 1px #fff;
+	font:700 16px/45px Arial, Helvetica, sans-serif; color:#6e747f;
+}
+#loginMain .browserList {
+	width:280px;
+	padding-top:10px;
+}
+#loginMain .browserList li {
+	width:60px; height:60px;
+	margin:0 16px;
+	overflow:hidden;
+}
+#loginMain .browserList li a {
+	display:block;
+	width:60px; height:60px;
+	background:url(../../images/BrowserIcon.png) no-repeat;
+	text-indent:-999px;
+}
+#loginMain .browserList li a.safari {
+	background-position:0 0;
+}
+#loginMain .browserList li a.chrome {
+	background-position:0 -60px;
+}
+#loginMain .browserList li a.firefox {
+	background-position:0 -120px;
+}
+#loginMain .browserList li a.ie10 {
+	background-position:0 -180px;
+}
+
+/*  old login  */
+
+/*LoginBox
+ -------------------------------------------------------------- */
+
+.loginBox {
+	width:382px;
+	height:400px;
+	display:inline-block;
+	zoom:1; 
+	*display:inline;
+	vertical-align:middle;
+	margin:0 auto;
+	border-radius:0 0 5px 5px;
+	box-shadow:0px 0px 5px 0px #000;
+}
+.hiddenDiv {
+	height:100%;
+	overflow:hidden;
+	display:inline-block;
+	width:1px;
+	margin-left:-1px;
+	zoom:1; 
+	*display:inline; 
+	*margin-top:-1px;
+	_margin-top:0;
+	vertical-align:middle;
+}
+.loginBox header,.registerBox header {
+	width:382px;
+	height:102px;
+	background:url(../images/loginHeaderBg.png) no-repeat;
+	border-radius:5px 5px 0 0;
+}
+.loginMain {
+	width:322px;
+	height:258px;
+	padding:40px 30px 0;
+	background:#134f7d;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#134f7d), to(#0d324f));
+	background:-moz-linear-gradient(top, #134f7d, #0d324f);
+	border-radius:0 0 5px 5px;
+}
+.loginMain div,.registerMain div {
+	width:322px;
+	height:34px;
+	background:#f5fafd;
+	border-radius:5px;
+	position:relative;
+}
+.loginMain div.InputNormarl,.registerMain div.InputNormarl {
+	border:1px solid #3e607b;
+	box-shadow:inset 2px 2px 6px #919598;
+}
+.loginMain div.InputFocus,.registerMain div.InputFocus{
+	border:1px solid #3e607b;
+	box-shadow:inset 2px 2px 6px #919598, 0px 0px 4px #919598;
+}
+.loginMain div label.loginInfo,.registerMain div label.loginInfo {
+	width:322px;
+	height:34px;
+	text-indent:5px;
+	font:100 15px/34px Arial;
+	color:#ccc;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.loginMain div .loginText,.registerMain div .loginText {
+	width:312px;
+	height:20px;
+	background:transparent;
+	font:100 15px/20px Arial;
+	border:0;
+	position:absolute;
+	left:5px;
+	top:7px;
+}
+.loginMain label,.registerMain label {
+	width:322px;
+	height:26px;
+	text-align:left;
+	display:block;
+	font:100 15px/26px Arial;
+	color:#fff;
+}
+.loginMain label.LoginError,.registerMain label.LoginError {
+	color:red;
+}
+.loginMain label a {
+	color:#fff;
+}
+.loginMain label a:hover { 
+	color:#fff;
+	text-decoration:none;
+}
+.loginMain .rememberCheckbox {
+	float:left;
+	width:18px;
+	height:18px;
+	margin-top:35px;
+}
+.loginMain label.remember {
+	float:left;
+	width:130px;
+	height:18px;
+	padding-left:5px;
+	margin-top:30px;
+}
+.loginMain div.UICheckbox {
+	float:left;
+	width:18px;
+	height:18px;
+	padding:0;
+	cursor:pointer;
+	margin-top:34px;
+}
+.loginMain span.checkBoxShow {
+	width:18px;
+	height:18px;
+	background:url(../images/CheckboxBg.png) no-repeat top;
+	display:block;
+}
+.loginMain span.selected {
+	width:18px;
+	height:18px;
+	background:url(../images/CheckboxBg.png) no-repeat 0 -18px;
+	display:block;
+}
+.loginMain .loginBtn { 
+	float:right;
+	width:96px;
+	height:32px;
+	background:url(../images/LoginBtnBg.png) no-repeat;
+	border:0;
+	cursor:pointer;
+	margin-top:30px;
+}
+.loginMain .loginBtn:hover { 
+	background:url(../images/LoginBtnBg.png) no-repeat left -32px;
+}
+.loginMain .loginBtn:active { 
+	background:url(../images/LoginBtnBg.png) no-repeat left -64px;
+}
+/*RegisterBox
+ -------------------------------------------------------------- */
+
+.registerBox {
+	width:382px;
+	height:550px;
+	display:inline-block;
+	zoom:1; 
+	*display:inline;
+	vertical-align:middle;
+	margin:0 auto;
+	border-radius:0 0 5px 5px;
+	box-shadow:0px 0px 5px 0px #000;
+}
+.registerMain {
+	width:322px;
+	height:408px;
+	padding:40px 30px 0;
+	background:#134f7d;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#134f7d), to(#0d324f));
+	background:-moz-linear-gradient(top, #134f7d, #0d324f);
+	border-radius:0 0 5px 5px;
+}
+.registerBtnLink,.registerBtnHover,.registerBtnClick { 
+	float:right;
+	width:93px;
+	height:29px;
+	background:url(../images/SignUpBtn.png) no-repeat top;
+	border:0;
+	cursor:pointer;
+	margin-top:30px;
+}
+.registerBtnHover { 
+	 background-position:0 -29px;
+}
+.registerBtnClick { 
+	 background-position:0 -58px;;
+}
+
+
+
+

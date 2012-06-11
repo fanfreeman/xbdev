@@ -1,0 +1,188 @@
+@charset "utf-8";
+/**
+* Description:profile style 
+* Developers:xuchen
+**/
+
+body {
+	background:url(../images/newsFeedBodyBg.jpg) repeat fixed;
+}
+#profileWrap { 
+	width:840px;
+	margin:55px auto 0;
+}
+
+/*Profile	Info
+-------------------------------------------------------------- */
+
+.profileHead {
+	width:820px; height:130px;
+	padding:10px;
+	background:#fff;
+	border-radius:5px;
+}
+.profileHead .userPhoto {
+	width:130px; height:130px;
+	border-radius:5px;
+}
+.profileHead .userInfo {
+	margin-left:10px;
+}
+.profileHead .userInfo h1 {
+	height:26px;
+	margin:0;
+	font:700 18px/26px Arial, Helvetica, sans-serif; color:#929292;
+}
+.profileHead .userInfo p {
+	height:25px;
+	margin:0;
+	font:700 12px/25px Arial, Helvetica, sans-serif; color:#6c6c6c;
+}
+
+.profileHead .userOperations {
+	padding-top:5px;
+}
+.profileHead .userOperations .Following {
+	width:115px; height:35px;
+	background:#5296cd;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#6aabdf), to(#397fbb));
+	background:-moz-linear-gradient(top, #6aabdf, #397fbb);
+	text-align:center;
+	font:700 18px/35px Arial, Helvetica, sans-serif; color:#fff;
+	border-radius:4px;
+}
+.profileHead .userOperations p {
+	width:115px; height:16px;
+	text-indent:17px;
+	font:700 12px/16px Arial, Helvetica, sans-serif; color:#4187c1;
+	cursor:pointer;
+}
+.profileHead .userOperations .sendMessage {
+	margin-top:22px;
+}
+.profileHead .userOperations .sendFile {
+	margin-top:12px;
+}
+
+/*Profile	Menu
+-------------------------------------------------------------- */
+
+.profileMenu {
+	width:255px; height:135px;
+	margin-top:10px; padding:0;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden;
+}
+.profileMenu li {
+	width:255px; height:45px;
+	margin:0;
+	text-indent:22px;
+	font:700 12px/45px Arial, Helvetica, sans-serif; color:#9f9f9f;
+	cursor:pointer;
+}
+.profileMenu li:hover,.profileMenu li.selected {
+	background:url(../images/profileMenuHover.gif) no-repeat 235px 9px #f2f2f2;
+	background:url(../images/profileMenuHover.gif) no-repeat 235px 9px, -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#f0f0f0));
+	background:url(../images/profileMenuHover.gif) no-repeat 235px 9px, -moz-linear-gradient(top, #f4f4f4, #f0f0f0);
+	color:#5b5b5b;
+}
+
+/*Profile Content
+-------------------------------------------------------------- */
+
+.profileContent {
+	margin-top:10px;
+	width:575px;
+}
+
+/*Profile Info
+-------------------------------------------------------------- */
+
+.profileInfo {
+	width:555px;
+	padding:10px;
+	background:#fff;
+	border-radius:5px;
+}
+.profileInfo table {
+	width:555px;
+}
+.profileInfo table th {
+	width:115px;
+	text-align:right; vertical-align:top;
+	font:700 12px/36px Arial, Helvetica, sans-serif; color:#939393;
+}
+.profileInfo table td {
+	padding:8px 0 8px 10px;
+}
+.profileInfo table td p {
+	height:20px;
+	margin:0;
+	font:400 12px/20px Arial, Helvetica, sans-serif; color:#000;
+}
+
+/*Profile Update
+-------------------------------------------------------------- */
+
+.profileUpdate {
+	width:555px;
+	padding:10px;
+	background:#fff;
+	border-radius:5px;
+}
+.profileUpdate header {
+	width:555px; height:40px;
+	border-bottom:1px solid #dbdbdb;
+}
+.profileUpdate header ul {
+	width:540px; height:40px;
+	padding:0;
+}
+.profileUpdate header ul li {
+	float:right; margin-right:5px; display:inline-block;
+	font:700 12px/40px Arial, Helvetica, sans-serif; color:#c5c5c5;
+	cursor:pointer;
+}
+.profileUpdate header ul li span {
+	color:#929292;
+	cursor:default;
+}
+.profileUpdate header ul li.selected {
+	color:#3f85bf;
+}
+
+.profileUpdate ul.followList {
+	width:555px;
+	padding:0;
+}
+.profileUpdate ul.followList li {
+	padding:25px 10px;
+	width:535px;
+	border-bottom:1px solid #dbdbdb;
+}
+.profileUpdate ul.followList li .userPhoto {
+	width:33px; height:33px;
+	padding:2px 4px 4px 2px;
+	background:url(../images/profileFollowListPhotoBg.png) no-repeat;
+}
+.profileUpdate ul.followList li aside {
+	width:360px;
+	margin-left:10px;
+}
+.profileUpdate ul.followList li aside h6 {
+	width:360px;
+	margin:0;
+	font:700 14px/20px Arial, Helvetica, sans-serif; color:#929292;
+}
+.profileUpdate ul.followList li aside p {
+	width:360px;
+	margin:0; padding:3px 0 0 0;
+	word-wrap:break-word;
+	font:400 14px/20px Arial, Helvetica, sans-serif; color:#aaa;
+}
+.profileUpdate ul.followList li .publishTime {
+	width:105px; height:14px;
+	margin:0;
+	font:400 12px/14px Arial, Helvetica, sans-serif; color:#aaa;
+}

@@ -1,0 +1,1 @@
+<?php echo bizNotifications::getNonReadNotification(Yii::app()->user->id); ?>
